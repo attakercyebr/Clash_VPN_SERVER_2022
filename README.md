@@ -26,11 +26,6 @@
 - enable to change the config dir (Windows only)
 
 
-## # Main repository for downloading tools[windows 11,10,8,7]
-
-- TUN mode on and Windows. [Doc](https://github.com/zzzgydi/clash-verge/releases/tag/v0.0.29)
-
-
 ## # Main repository for downloading tools[Linux]
 
 - Assets. [Doc](https://github.com/Fndroid/clash_for_windows_pkg/releases)
