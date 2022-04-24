@@ -13,21 +13,27 @@
 - Remote providers, allowing users to get node lists remotely instead of hardcoding in config
 - Netfilter TCP redirecting. Deploy Clash on your Internet gateway with `iptables`.
 - Comprehensive HTTP RESTful API controller
+- Full clash config supported, Partial clash premium config supported.
+- Profiles management and enhancement (by yaml and Javascript). Doc
+- Simple UI and supports custom theme color.
+- System proxy setting and guard.
+- sort proxy node
+- custom proxy test url
+- logs page filter
+- connections page filter
+- default user agent for subscription
+- system tray add tun mode toggle
+- enable to change the config dir (Windows only)
+
 
 ## # Main repository for downloading tools[windows 11,10,8,7]
 
-- TUN mode on and Windows. [Doc](https://github.com/Fndroid/clash_for_windows_pkg/releases)
+- TUN mode on and Windows. [Doc](https://github.com/zzzgydi/clash-verge/releases/tag/v0.0.29)
 
 
 ## # Main repository for downloading tools[Linux]
 
-- TUN mode on macOS, Linux. [Doc](https://github.com/Fndroid/clash_for_windows_pkg/releases)
-
-
-## # Main repository for downloading tools[Android]
-
-- TUN mode on Android. [Doc](https://github.com/Kr328/ClashForAndroid/releases)
-
+- Assets. [Doc](https://github.com/Fndroid/clash_for_windows_pkg/releases)
 
 ## # See how it works
 
