@@ -1,0 +1,3158 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+ipv6: false
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: true
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  use-host: true
+  enhanced-mode: fake-ip
+  listen: 127.0.0.1:7874
+  nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  fallback:
+    - 1.0.0.1
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+  default-nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - "*.time.edu.cn"
+    - "*.ntp.org.cn"
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - "*.kuwo.cn"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - msftconnecttest.com
+    - msftncsi.com
+    - localhost.ptlogin2.qq.com
+    - localhost.sec.qq.com
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - xnotify.xboxlive.com
+    - +.battlenet.com.cn
+    - +.wotgame.cn
+    - +.wggames.cn
+    - +.wowsgame.cn
+    - +.wargaming.net
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - +.stun.*.*
+    - +.stun.*.*.*
+    - +.stun.*.*.*.*
+    - heartbeat.belkin.com
+    - "*.linksys.com"
+    - "*.linksyssmartwifi.com"
+    - "*.router.asus.com"
+    - mesu.apple.com
+    - swscan.apple.com
+    - swquery.apple.com
+    - swdownload.apple.com
+    - swcdn.apple.com
+    - swdist.apple.com
+    - lens.l.google.com
+    - stun.l.google.com
+    - +.nflxvideo.net
+    - "*.square-enix.com"
+    - "*.finalfantasyxiv.com"
+    - "*.ffxiv.com"
+    - "*.mcdn.bilivideo.cn"
+    - +.media.dssott.com
+proxies:
+  - name: _DE_@M4nifest0_1
+    server: 5.183.179.140
+    port: 9019
+    type: ss
+    cipher: aes-256-cfb
+    password: GA9KzeEgvfxNrgmM
+    udp: true
+  - name: _DE_@M4nifest0_2
+    server: 5.183.179.140
+    port: 9094
+    type: ss
+    cipher: aes-256-cfb
+    password: rpgbNnU9rDDU4aWZ
+    udp: true
+  - name: _DE_@M4nifest0_3
+    server: 5.183.179.140
+    port: 9059
+    type: ss
+    cipher: aes-256-cfb
+    password: 9XwYyZsK8SNzQDtY
+    udp: true
+  - name: _DE_@M4nifest0_4
+    server: 5.183.179.140
+    port: 9038
+    type: ss
+    cipher: aes-256-cfb
+    password: gYCYXfkUQEs2TaJQ
+    udp: true
+  - name: _DE_@M4nifest0_5
+    server: 5.183.179.140
+    port: 9046
+    type: ss
+    cipher: aes-256-cfb
+    password: NvS8N4Vf8qAGPSCL
+    udp: true
+  - name: _DE_@M4nifest0_6
+    server: 5.183.179.140
+    port: 9073
+    type: ss
+    cipher: aes-256-cfb
+    password: daFYagqDdBdA6VTX
+    udp: true
+  - name: _DE_@M4nifest0_7
+    server: 5.183.179.140
+    port: 9014
+    type: ss
+    cipher: aes-256-cfb
+    password: KnJGad3FqTvjqbaX
+    udp: true
+  - name: _DE_@M4nifest0_8
+    server: 5.183.179.140
+    port: 9098
+    type: ss
+    cipher: aes-256-cfb
+    password: aLpQtfEZe445QyHk
+    udp: true
+  - name: _DE_@M4nifest0_9
+    server: 5.183.179.140
+    port: 9000
+    type: ss
+    cipher: aes-256-cfb
+    password: a3GFYt36Sm82Vys9
+    udp: true
+  - name: _DE_@M4nifest0_10
+    server: 5.183.179.140
+    port: 9020
+    type: ss
+    cipher: aes-256-cfb
+    password: BNmAXXxAHYpTRdzu
+    udp: true
+  - name: _DE_@M4nifest0_11
+    server: 5.183.179.140
+    port: 9084
+    type: ss
+    cipher: aes-256-cfb
+    password: c3NtHJ5ujV2tGDfj
+    udp: true
+  - name: _DE_@M4nifest0_12
+    server: 5.183.179.140
+    port: 9011
+    type: ss
+    cipher: aes-256-cfb
+    password: M3t2ZEQcMGRWBjRa
+    udp: true
+  - name: _DE_@M4nifest0_13
+    server: 5.183.179.140
+    port: 9057
+    type: ss
+    cipher: aes-256-cfb
+    password: wjTugX3ZtHMB9c3Z
+    udp: true
+  - name: _DE_@M4nifest0_14
+    server: 5.183.179.140
+    port: 9042
+    type: ss
+    cipher: aes-256-cfb
+    password: S7KwUu7yBy58S3Ga
+    udp: true
+  - name: _DE_@M4nifest0_15
+    server: 5.183.179.140
+    port: 9025
+    type: ss
+    cipher: aes-256-cfb
+    password: XPtzA9sCug3SPR4c
+    udp: true
+  - name: _DE_@M4nifest0_16
+    server: 5.183.179.140
+    port: 9088
+    type: ss
+    cipher: aes-256-cfb
+    password: f8npKgNzdkss2ytn
+    udp: true
+  - name: _DE_@M4nifest0_17
+    server: 5.183.179.140
+    port: 9026
+    type: ss
+    cipher: aes-256-cfb
+    password: QWDDvVE9npNurQfA
+    udp: true
+  - name: _DE_@M4nifest0_18
+    server: 5.183.179.146
+    port: 9060
+    type: ss
+    cipher: aes-256-cfb
+    password: ueLXVkvh4hckhErQ
+    udp: true
+  - name: _DE_@M4nifest0_19
+    server: 5.183.179.146
+    port: 9070
+    type: ss
+    cipher: aes-256-cfb
+    password: bf7v334KKDV3YDhH
+    udp: true
+  - name: _DE_@M4nifest0_20
+    server: 5.183.179.146
+    port: 9032
+    type: ss
+    cipher: aes-256-cfb
+    password: UWZQeLRWnkqgkseq
+    udp: true
+  - name: _DE_@M4nifest0_21
+    server: 5.183.179.146
+    port: 9059
+    type: ss
+    cipher: aes-256-cfb
+    password: 9XwYyZsK8SNzQDtY
+    udp: true
+  - name: _DE_@M4nifest0_22
+    server: 5.183.179.146
+    port: 9050
+    type: ss
+    cipher: aes-256-cfb
+    password: FG5ddLsMPbV5CutE
+    udp: true
+  - name: _DE_@M4nifest0_23
+    server: 5.183.179.146
+    port: 9006
+    type: ss
+    cipher: aes-256-cfb
+    password: FAdUvMJUq5vDgKEq
+    udp: true
+  - name: _DE_@M4nifest0_24
+    server: 5.183.179.146
+    port: 9097
+    type: ss
+    cipher: aes-256-cfb
+    password: Sn5B7jTqr76aCJT8
+    udp: true
+  - name: _DE_@M4nifest0_25
+    server: 5.183.179.146
+    port: 9098
+    type: ss
+    cipher: aes-256-cfb
+    password: aLpQtfEZe445QyHk
+    udp: true
+  - name: _DE_@M4nifest0_26
+    server: 5.183.179.146
+    port: 9043
+    type: ss
+    cipher: aes-256-cfb
+    password: HSZuyJQcWe8dxNdF
+    udp: true
+  - name: _DE_@M4nifest0_27
+    server: 5.183.179.146
+    port: 9000
+    type: ss
+    cipher: aes-256-cfb
+    password: a3GFYt36Sm82Vys9
+    udp: true
+  - name: _DE_@M4nifest0_28
+    server: 5.183.179.146
+    port: 9084
+    type: ss
+    cipher: aes-256-cfb
+    password: c3NtHJ5ujV2tGDfj
+    udp: true
+  - name: _DE_@M4nifest0_29
+    server: 5.183.179.146
+    port: 9007
+    type: ss
+    cipher: aes-256-cfb
+    password: kSPmvwdFzGMMW5pY
+    udp: true
+  - name: _DE_@M4nifest0_30
+    server: 5.183.179.146
+    port: 9011
+    type: ss
+    cipher: aes-256-cfb
+    password: M3t2ZEQcMGRWBjRa
+    udp: true
+  - name: _DE_@M4nifest0_31
+    server: 5.183.179.146
+    port: 9057
+    type: ss
+    cipher: aes-256-cfb
+    password: wjTugX3ZtHMB9c3Z
+    udp: true
+  - name: _DE_@M4nifest0_32
+    server: 5.183.179.146
+    port: 9037
+    type: ss
+    cipher: aes-256-cfb
+    password: TN2YqghxeFDKZfLU
+    udp: true
+  - name: _DE_@M4nifest0_33
+    server: 5.183.179.146
+    port: 9018
+    type: ss
+    cipher: aes-256-cfb
+    password: fG2artUmHfNT2cX7
+    udp: true
+  - name: _DE_@M4nifest0_34
+    server: 5.183.179.146
+    port: 9026
+    type: ss
+    cipher: aes-256-cfb
+    password: QWDDvVE9npNurQfA
+    udp: true
+  - name: _DE_@M4nifest0_35
+    server: 5.183.179.146
+    port: 9053
+    type: ss
+    cipher: aes-256-cfb
+    password: SBM7R883jBmnqe6C
+    udp: true
+  - name: _DE_@M4nifest0_36
+    server: 5.183.179.170
+    port: 9014
+    type: ss
+    cipher: aes-256-cfb
+    password: KnJGad3FqTvjqbaX
+    udp: true
+  - name: _DE_@M4nifest0_37
+    server: 5.183.179.170
+    port: 9084
+    type: ss
+    cipher: aes-256-cfb
+    password: c3NtHJ5ujV2tGDfj
+    udp: true
+  - name: _DE_@M4nifest0_38
+    server: 5.183.179.170
+    port: 9003
+    type: ss
+    cipher: aes-256-cfb
+    password: JdmRK9gMEqFgs8nP
+    udp: true
+  - name: _DE_@M4nifest0_39
+    server: 5.183.179.170
+    port: 9057
+    type: ss
+    cipher: aes-256-cfb
+    password: wjTugX3ZtHMB9c3Z
+    udp: true
+  - name: _DE_@M4nifest0_40
+    server: 5.183.179.170
+    port: 9015
+    type: ss
+    cipher: aes-256-cfb
+    password: ZpNDDKRu9MagNvaf
+    udp: true
+  - name: _DE_@M4nifest0_41
+    server: 5.183.179.170
+    port: 9037
+    type: ss
+    cipher: aes-256-cfb
+    password: TN2YqghxeFDKZfLU
+    udp: true
+  - name: _DE_@M4nifest0_42
+    server: 5.183.179.170
+    port: 9088
+    type: ss
+    cipher: aes-256-cfb
+    password: f8npKgNzdkss2ytn
+    udp: true
+  - name: _RU_@M4nifest0_43
+    server: 213.183.53.200
+    port: 9026
+    type: ss
+    cipher: aes-256-cfb
+    password: QWDDvVE9npNurQfA
+    udp: true
+  - name: _RU_@M4nifest0_44
+    server: 213.183.53.200
+    port: 9027
+    type: ss
+    cipher: aes-256-cfb
+    password: EXN3S3eQpjE7EJu8
+    udp: true
+  - name: _RU_@M4nifest0_45
+    server: 213.183.53.200
+    port: 9046
+    type: ss
+    cipher: aes-256-cfb
+    password: NvS8N4Vf8qAGPSCL
+    udp: true
+  - name: _RU_@M4nifest0_46
+    server: 213.183.53.200
+    port: 9057
+    type: ss
+    cipher: aes-256-cfb
+    password: wjTugX3ZtHMB9c3Z
+    udp: true
+  - name: _RU_@M4nifest0_47
+    server: 213.183.53.200
+    port: 9059
+    type: ss
+    cipher: aes-256-cfb
+    password: 9XwYyZsK8SNzQDtY
+    udp: true
+  - name: _RU_@M4nifest0_48
+    server: 213.183.53.200
+    port: 9088
+    type: ss
+    cipher: aes-256-cfb
+    password: f8npKgNzdkss2ytn
+    udp: true
+  - name: _RU_@M4nifest0_49
+    server: 213.183.53.200
+    port: 9098
+    type: ss
+    cipher: aes-256-cfb
+    password: aLpQtfEZe445QyHk
+    udp: true
+  - name: _RU_@M4nifest0_50
+    server: 213.183.53.196
+    port: 9001
+    type: ss
+    cipher: aes-256-cfb
+    password: UkXRsXvR6buDMG2Y
+    udp: true
+  - name: _NL_@M4nifest0_51
+    server: 213.183.51.171
+    port: 9019
+    type: ss
+    cipher: aes-256-cfb
+    password: GA9KzeEgvfxNrgmM
+    udp: true
+  - name: _NL_@M4nifest0_52
+    server: 213.183.51.171
+    port: 9020
+    type: ss
+    cipher: aes-256-cfb
+    password: BNmAXXxAHYpTRdzu
+    udp: true
+  - name: _NL_@M4nifest0_53
+    server: 213.183.51.171
+    port: 9026
+    type: ss
+    cipher: aes-256-cfb
+    password: QWDDvVE9npNurQfA
+    udp: true
+  - name: _NL_@M4nifest0_54
+    server: 213.183.51.171
+    port: 9037
+    type: ss
+    cipher: aes-256-cfb
+    password: TN2YqghxeFDKZfLU
+    udp: true
+  - name: _NL_@M4nifest0_55
+    server: 213.183.51.171
+    port: 9042
+    type: ss
+    cipher: aes-256-cfb
+    password: S7KwUu7yBy58S3Ga
+    udp: true
+  - name: _NL_@M4nifest0_56
+    server: 213.183.51.171
+    port: 9043
+    type: ss
+    cipher: aes-256-cfb
+    password: HSZuyJQcWe8dxNdF
+    udp: true
+  - name: _NL_@M4nifest0_57
+    server: 213.183.51.171
+    port: 9045
+    type: ss
+    cipher: aes-256-cfb
+    password: Lp27rqyJq72bZsqX
+    udp: true
+  - name: _NL_@M4nifest0_58
+    server: 213.183.51.171
+    port: 9046
+    type: ss
+    cipher: aes-256-cfb
+    password: NvS8N4Vf8qAGPSCL
+    udp: true
+  - name: _NL_@M4nifest0_59
+    server: 213.183.51.171
+    port: 9070
+    type: ss
+    cipher: aes-256-cfb
+    password: bf7v334KKDV3YDhH
+    udp: true
+  - name: _NL_@M4nifest0_60
+    server: 213.183.51.171
+    port: 9073
+    type: ss
+    cipher: aes-256-cfb
+    password: daFYagqDdBdA6VTX
+    udp: true
+  - name: _NL_@M4nifest0_61
+    server: 213.183.51.171
+    port: 9088
+    type: ss
+    cipher: aes-256-cfb
+    password: f8npKgNzdkss2ytn
+    udp: true
+  - name: _NL_@M4nifest0_62
+    server: 213.183.59.229
+    port: 9000
+    type: ss
+    cipher: aes-256-cfb
+    password: a3GFYt36Sm82Vys9
+    udp: true
+  - name: _NL_@M4nifest0_63
+    server: 213.183.59.229
+    port: 9001
+    type: ss
+    cipher: aes-256-cfb
+    password: UkXRsXvR6buDMG2Y
+    udp: true
+  - name: _NL_@M4nifest0_64
+    server: 213.183.59.229
+    port: 9018
+    type: ss
+    cipher: aes-256-cfb
+    password: fG2artUmHfNT2cX7
+    udp: true
+  - name: _NL_@M4nifest0_65
+    server: 213.183.59.229
+    port: 9025
+    type: ss
+    cipher: aes-256-cfb
+    password: XPtzA9sCug3SPR4c
+    udp: true
+  - name: _NL_@M4nifest0_66
+    server: 213.183.59.229
+    port: 9046
+    type: ss
+    cipher: aes-256-cfb
+    password: NvS8N4Vf8qAGPSCL
+    udp: true
+  - name: _NL_@M4nifest0_67
+    server: 213.183.59.229
+    port: 9056
+    type: ss
+    cipher: aes-256-cfb
+    password: rNBfNuuANFCAk7KB
+    udp: true
+  - name: _NL_@M4nifest0_68
+    server: 213.183.59.229
+    port: 9070
+    type: ss
+    cipher: aes-256-cfb
+    password: bf7v334KKDV3YDhH
+    udp: true
+  - name: _NL_@M4nifest0_69
+    server: 213.183.59.229
+    port: 9084
+    type: ss
+    cipher: aes-256-cfb
+    password: c3NtHJ5ujV2tGDfj
+    udp: true
+  - name: _NL_@M4nifest0_70
+    server: 213.183.59.229
+    port: 9094
+    type: ss
+    cipher: aes-256-cfb
+    password: rpgbNnU9rDDU4aWZ
+    udp: true
+  - name: _NL_@M4nifest0_71
+    server: 213.183.59.229
+    port: 9098
+    type: ss
+    cipher: aes-256-cfb
+    password: aLpQtfEZe445QyHk
+    udp: true
+  - name: _NL_@M4nifest0_72
+    server: 213.183.59.231
+    port: 9005
+    type: ss
+    cipher: aes-256-cfb
+    password: ZET59LF6DvCC8KVt
+    udp: true
+  - name: _NL_@M4nifest0_73
+    server: 213.183.59.231
+    port: 9007
+    type: ss
+    cipher: aes-256-cfb
+    password: kSPmvwdFzGMMW5pY
+    udp: true
+  - name: _NL_@M4nifest0_74
+    server: 213.183.59.231
+    port: 9018
+    type: ss
+    cipher: aes-256-cfb
+    password: fG2artUmHfNT2cX7
+    udp: true
+  - name: _NL_@M4nifest0_75
+    server: 213.183.59.231
+    port: 9031
+    type: ss
+    cipher: aes-256-cfb
+    password: BwcAUZk8hUFAkDGN
+    udp: true
+  - name: _NL_@M4nifest0_76
+    server: 213.183.59.231
+    port: 9038
+    type: ss
+    cipher: aes-256-cfb
+    password: gYCYXfkUQEs2TaJQ
+    udp: true
+  - name: _NL_@M4nifest0_77
+    server: 213.183.59.231
+    port: 9040
+    type: ss
+    cipher: aes-256-cfb
+    password: p9z5BVADH2YFs3MN
+    udp: true
+  - name: _NL_@M4nifest0_78
+    server: 213.183.59.231
+    port: 9042
+    type: ss
+    cipher: aes-256-cfb
+    password: S7KwUu7yBy58S3Ga
+    udp: true
+  - name: _NL_@M4nifest0_79
+    server: 213.183.59.231
+    port: 9043
+    type: ss
+    cipher: aes-256-cfb
+    password: HSZuyJQcWe8dxNdF
+    udp: true
+  - name: _NL_@M4nifest0_80
+    server: 213.183.59.231
+    port: 9057
+    type: ss
+    cipher: aes-256-cfb
+    password: wjTugX3ZtHMB9c3Z
+    udp: true
+  - name: _NL_@M4nifest0_81
+    server: 213.183.59.231
+    port: 9059
+    type: ss
+    cipher: aes-256-cfb
+    password: 9XwYyZsK8SNzQDtY
+    udp: true
+  - name: _NL_@M4nifest0_82
+    server: 213.183.59.231
+    port: 9070
+    type: ss
+    cipher: aes-256-cfb
+    password: bf7v334KKDV3YDhH
+    udp: true
+  - name: _NL_@M4nifest0_83
+    server: 213.183.59.231
+    port: 9079
+    type: ss
+    cipher: aes-256-cfb
+    password: TPqX8edgbAURcAMb
+    udp: true
+  - name: _NL_@M4nifest0_84
+    server: 213.183.59.231
+    port: 9088
+    type: ss
+    cipher: aes-256-cfb
+    password: f8npKgNzdkss2ytn
+    udp: true
+  - name: _NL_@M4nifest0_85
+    server: 213.183.59.231
+    port: 9093
+    type: ss
+    cipher: aes-256-cfb
+    password: wfLC2y7rzZyCmuyt
+    udp: true
+  - name: _NL_@M4nifest0_86
+    server: 213.183.59.231
+    port: 9094
+    type: ss
+    cipher: aes-256-cfb
+    password: rpgbNnU9rDDU4aWZ
+    udp: true
+  - name: _NL_@M4nifest0_87
+    server: 213.183.59.231
+    port: 9097
+    type: ss
+    cipher: aes-256-cfb
+    password: Sn5B7jTqr76aCJT8
+    udp: true
+  - name: _NL_@M4nifest0_88
+    server: 213.183.59.231
+    port: 9098
+    type: ss
+    cipher: aes-256-cfb
+    password: aLpQtfEZe445QyHk
+    udp: true
+  - name: _CH_@M4nifest0_89
+    server: 185.126.116.117
+    port: 9033
+    type: ss
+    cipher: aes-256-cfb
+    password: UTJA57ypk2XKQpnm
+    udp: true
+  - name: _CH_@M4nifest0_90
+    server: 185.126.116.117
+    port: 9019
+    type: ss
+    cipher: aes-256-cfb
+    password: GA9KzeEgvfxNrgmM
+    udp: true
+  - name: _CH_@M4nifest0_91
+    server: 185.126.116.117
+    port: 9060
+    type: ss
+    cipher: aes-256-cfb
+    password: ueLXVkvh4hckhErQ
+    udp: true
+  - name: _CH_@M4nifest0_92
+    server: 185.126.116.117
+    port: 9005
+    type: ss
+    cipher: aes-256-cfb
+    password: ZET59LF6DvCC8KVt
+    udp: true
+  - name: _CH_@M4nifest0_93
+    server: 185.126.116.117
+    port: 9024
+    type: ss
+    cipher: aes-256-cfb
+    password: BejrQvtu9sqUeNuZ
+    udp: true
+  - name: _CH_@M4nifest0_94
+    server: 185.126.116.117
+    port: 9041
+    type: ss
+    cipher: aes-256-cfb
+    password: U6qnYRhfyDmn8sgn
+    udp: true
+  - name: _CH_@M4nifest0_95
+    server: 185.126.116.117
+    port: 9094
+    type: ss
+    cipher: aes-256-cfb
+    password: rpgbNnU9rDDU4aWZ
+    udp: true
+  - name: _CH_@M4nifest0_96
+    server: 185.126.116.117
+    port: 9093
+    type: ss
+    cipher: aes-256-cfb
+    password: wfLC2y7rzZyCmuyt
+    udp: true
+  - name: _CH_@M4nifest0_97
+    server: 185.126.116.117
+    port: 9070
+    type: ss
+    cipher: aes-256-cfb
+    password: bf7v334KKDV3YDhH
+    udp: true
+  - name: _CH_@M4nifest0_98
+    server: 185.126.116.117
+    port: 9032
+    type: ss
+    cipher: aes-256-cfb
+    password: UWZQeLRWnkqgkseq
+    udp: true
+  - name: _CH_@M4nifest0_99
+    server: 185.126.116.117
+    port: 9059
+    type: ss
+    cipher: aes-256-cfb
+    password: 9XwYyZsK8SNzQDtY
+    udp: true
+  - name: _CH_@M4nifest0_100
+    server: 185.126.116.117
+    port: 9050
+    type: ss
+    cipher: aes-256-cfb
+    password: FG5ddLsMPbV5CutE
+    udp: true
+  - name: _CH_@M4nifest0_101
+    server: 185.126.116.117
+    port: 9038
+    type: ss
+    cipher: aes-256-cfb
+    password: gYCYXfkUQEs2TaJQ
+    udp: true
+  - name: _CH_@M4nifest0_102
+    server: 185.126.116.117
+    port: 9046
+    type: ss
+    cipher: aes-256-cfb
+    password: NvS8N4Vf8qAGPSCL
+    udp: true
+  - name: _CH_@M4nifest0_103
+    server: 185.126.116.117
+    port: 9073
+    type: ss
+    cipher: aes-256-cfb
+    password: daFYagqDdBdA6VTX
+    udp: true
+  - name: _CH_@M4nifest0_104
+    server: 185.126.116.117
+    port: 9006
+    type: ss
+    cipher: aes-256-cfb
+    password: FAdUvMJUq5vDgKEq
+    udp: true
+  - name: _CH_@M4nifest0_105
+    server: 185.126.116.117
+    port: 9097
+    type: ss
+    cipher: aes-256-cfb
+    password: Sn5B7jTqr76aCJT8
+    udp: true
+  - name: _CH_@M4nifest0_106
+    server: 185.126.116.117
+    port: 9056
+    type: ss
+    cipher: aes-256-cfb
+    password: rNBfNuuANFCAk7KB
+    udp: true
+  - name: _CH_@M4nifest0_107
+    server: 185.126.116.117
+    port: 9014
+    type: ss
+    cipher: aes-256-cfb
+    password: KnJGad3FqTvjqbaX
+    udp: true
+  - name: _CH_@M4nifest0_108
+    server: 185.126.116.117
+    port: 9079
+    type: ss
+    cipher: aes-256-cfb
+    password: TPqX8edgbAURcAMb
+    udp: true
+  - name: _CH_@M4nifest0_109
+    server: 185.126.116.117
+    port: 9098
+    type: ss
+    cipher: aes-256-cfb
+    password: aLpQtfEZe445QyHk
+    udp: true
+  - name: _CH_@M4nifest0_110
+    server: 185.126.116.117
+    port: 9043
+    type: ss
+    cipher: aes-256-cfb
+    password: HSZuyJQcWe8dxNdF
+    udp: true
+  - name: _CH_@M4nifest0_111
+    server: 185.126.116.117
+    port: 9000
+    type: ss
+    cipher: aes-256-cfb
+    password: a3GFYt36Sm82Vys9
+    udp: true
+  - name: _CH_@M4nifest0_112
+    server: 185.126.116.117
+    port: 9020
+    type: ss
+    cipher: aes-256-cfb
+    password: BNmAXXxAHYpTRdzu
+    udp: true
+  - name: _CH_@M4nifest0_113
+    server: 185.126.116.117
+    port: 9031
+    type: ss
+    cipher: aes-256-cfb
+    password: BwcAUZk8hUFAkDGN
+    udp: true
+  - name: _CH_@M4nifest0_114
+    server: 185.126.116.117
+    port: 9045
+    type: ss
+    cipher: aes-256-cfb
+    password: Lp27rqyJq72bZsqX
+    udp: true
+  - name: _CH_@M4nifest0_115
+    server: 185.126.116.117
+    port: 9084
+    type: ss
+    cipher: aes-256-cfb
+    password: c3NtHJ5ujV2tGDfj
+    udp: true
+  - name: _CH_@M4nifest0_116
+    server: 185.126.116.117
+    port: 9007
+    type: ss
+    cipher: aes-256-cfb
+    password: kSPmvwdFzGMMW5pY
+    udp: true
+  - name: _CH_@M4nifest0_117
+    server: 185.126.116.117
+    port: 9040
+    type: ss
+    cipher: aes-256-cfb
+    password: p9z5BVADH2YFs3MN
+    udp: true
+  - name: _CH_@M4nifest0_118
+    server: 185.126.116.117
+    port: 9003
+    type: ss
+    cipher: aes-256-cfb
+    password: JdmRK9gMEqFgs8nP
+    udp: true
+  - name: _CH_@M4nifest0_119
+    server: 185.126.116.117
+    port: 9011
+    type: ss
+    cipher: aes-256-cfb
+    password: M3t2ZEQcMGRWBjRa
+    udp: true
+  - name: _CH_@M4nifest0_120
+    server: 185.126.116.117
+    port: 9008
+    type: ss
+    cipher: aes-256-cfb
+    password: y9VURyNzJWNRYEGQ
+    udp: true
+  - name: _CH_@M4nifest0_121
+    server: 185.126.116.117
+    port: 9057
+    type: ss
+    cipher: aes-256-cfb
+    password: wjTugX3ZtHMB9c3Z
+    udp: true
+  - name: _CH_@M4nifest0_122
+    server: 185.126.116.117
+    port: 9015
+    type: ss
+    cipher: aes-256-cfb
+    password: ZpNDDKRu9MagNvaf
+    udp: true
+  - name: _CH_@M4nifest0_123
+    server: 185.126.116.117
+    port: 9037
+    type: ss
+    cipher: aes-256-cfb
+    password: TN2YqghxeFDKZfLU
+    udp: true
+  - name: _CH_@M4nifest0_124
+    server: 185.126.116.117
+    port: 9042
+    type: ss
+    cipher: aes-256-cfb
+    password: S7KwUu7yBy58S3Ga
+    udp: true
+  - name: _CH_@M4nifest0_125
+    server: 185.126.116.117
+    port: 9018
+    type: ss
+    cipher: aes-256-cfb
+    password: fG2artUmHfNT2cX7
+    udp: true
+  - name: _CH_@M4nifest0_126
+    server: 185.126.116.117
+    port: 9064
+    type: ss
+    cipher: aes-256-cfb
+    password: cp8pRSUAyLhTfVWH
+    udp: true
+  - name: _CH_@M4nifest0_127
+    server: 185.126.116.117
+    port: 9025
+    type: ss
+    cipher: aes-256-cfb
+    password: XPtzA9sCug3SPR4c
+    udp: true
+  - name: _CH_@M4nifest0_128
+    server: 185.126.116.117
+    port: 9088
+    type: ss
+    cipher: aes-256-cfb
+    password: f8npKgNzdkss2ytn
+    udp: true
+  - name: _CH_@M4nifest0_129
+    server: 185.126.116.117
+    port: 9026
+    type: ss
+    cipher: aes-256-cfb
+    password: QWDDvVE9npNurQfA
+    udp: true
+  - name: _CH_@M4nifest0_130
+    server: 185.126.116.117
+    port: 9001
+    type: ss
+    cipher: aes-256-cfb
+    password: UkXRsXvR6buDMG2Y
+    udp: true
+  - name: _CH_@M4nifest0_131
+    server: 185.126.116.117
+    port: 9053
+    type: ss
+    cipher: aes-256-cfb
+    password: SBM7R883jBmnqe6C
+    udp: true
+  - name: _CH_@M4nifest0_132
+    server: 185.126.116.117
+    port: 9027
+    type: ss
+    cipher: aes-256-cfb
+    password: EXN3S3eQpjE7EJu8
+    udp: true
+  - name: _CH_@M4nifest0_133
+    server: 185.126.116.117
+    port: 9010
+    type: ss
+    cipher: aes-256-cfb
+    password: f63gg8EruDnUrmz4
+    udp: true
+  - name: _DE_@M4nifest0_134
+    server: 5.183.179.146
+    port: 9026
+    type: ss
+    cipher: aes-256-cfb
+    password: QWDDvVE9npNurQfA
+    udp: true
+  - name: _DE_@M4nifest0_135
+    server: 5.183.179.146
+    port: 9001
+    type: ss
+    cipher: aes-256-cfb
+    password: UkXRsXvR6buDMG2Y
+    udp: true
+  - name: _DE_@M4nifest0_136
+    server: 5.183.179.146
+    port: 9053
+    type: ss
+    cipher: aes-256-cfb
+    password: SBM7R883jBmnqe6C
+    udp: true
+  - name: _DE_@M4nifest0_137
+    server: 5.183.179.146
+    port: 9010
+    type: ss
+    cipher: aes-256-cfb
+    password: f63gg8EruDnUrmz4
+    udp: true
+  - name: _CH_@M4nifest0_138
+    server: 185.126.116.124
+    port: 9033
+    type: ss
+    cipher: aes-256-cfb
+    password: UTJA57ypk2XKQpnm
+    udp: true
+  - name: _CH_@M4nifest0_139
+    server: 185.126.116.124
+    port: 9019
+    type: ss
+    cipher: aes-256-cfb
+    password: GA9KzeEgvfxNrgmM
+    udp: true
+  - name: _CH_@M4nifest0_140
+    server: 185.126.116.124
+    port: 9060
+    type: ss
+    cipher: aes-256-cfb
+    password: ueLXVkvh4hckhErQ
+    udp: true
+  - name: _CH_@M4nifest0_141
+    server: 185.126.116.124
+    port: 9005
+    type: ss
+    cipher: aes-256-cfb
+    password: ZET59LF6DvCC8KVt
+    udp: true
+  - name: _CH_@M4nifest0_142
+    server: 185.126.116.124
+    port: 9024
+    type: ss
+    cipher: aes-256-cfb
+    password: BejrQvtu9sqUeNuZ
+    udp: true
+  - name: _CH_@M4nifest0_143
+    server: 185.126.116.124
+    port: 9041
+    type: ss
+    cipher: aes-256-cfb
+    password: U6qnYRhfyDmn8sgn
+    udp: true
+  - name: _CH_@M4nifest0_144
+    server: 185.126.116.124
+    port: 9094
+    type: ss
+    cipher: aes-256-cfb
+    password: rpgbNnU9rDDU4aWZ
+    udp: true
+  - name: _CH_@M4nifest0_145
+    server: 185.126.116.124
+    port: 9093
+    type: ss
+    cipher: aes-256-cfb
+    password: wfLC2y7rzZyCmuyt
+    udp: true
+  - name: _CH_@M4nifest0_146
+    server: 185.126.116.124
+    port: 9070
+    type: ss
+    cipher: aes-256-cfb
+    password: bf7v334KKDV3YDhH
+    udp: true
+  - name: _CH_@M4nifest0_147
+    server: 185.126.116.124
+    port: 9032
+    type: ss
+    cipher: aes-256-cfb
+    password: UWZQeLRWnkqgkseq
+    udp: true
+  - name: _CH_@M4nifest0_148
+    server: 185.126.116.124
+    port: 9059
+    type: ss
+    cipher: aes-256-cfb
+    password: 9XwYyZsK8SNzQDtY
+    udp: true
+  - name: _CH_@M4nifest0_149
+    server: 185.126.116.124
+    port: 9050
+    type: ss
+    cipher: aes-256-cfb
+    password: FG5ddLsMPbV5CutE
+    udp: true
+  - name: _CH_@M4nifest0_150
+    server: 185.126.116.124
+    port: 9038
+    type: ss
+    cipher: aes-256-cfb
+    password: gYCYXfkUQEs2TaJQ
+    udp: true
+  - name: _CH_@M4nifest0_151
+    server: 185.126.116.124
+    port: 9046
+    type: ss
+    cipher: aes-256-cfb
+    password: NvS8N4Vf8qAGPSCL
+    udp: true
+  - name: _CH_@M4nifest0_152
+    server: 185.126.116.124
+    port: 9073
+    type: ss
+    cipher: aes-256-cfb
+    password: daFYagqDdBdA6VTX
+    udp: true
+  - name: _CH_@M4nifest0_153
+    server: 185.126.116.124
+    port: 9097
+    type: ss
+    cipher: aes-256-cfb
+    password: Sn5B7jTqr76aCJT8
+    udp: true
+  - name: _CH_@M4nifest0_154
+    server: 185.126.116.124
+    port: 9056
+    type: ss
+    cipher: aes-256-cfb
+    password: rNBfNuuANFCAk7KB
+    udp: true
+  - name: _CH_@M4nifest0_155
+    server: 185.126.116.124
+    port: 9079
+    type: ss
+    cipher: aes-256-cfb
+    password: TPqX8edgbAURcAMb
+    udp: true
+  - name: _CH_@M4nifest0_156
+    server: 185.126.116.124
+    port: 9098
+    type: ss
+    cipher: aes-256-cfb
+    password: aLpQtfEZe445QyHk
+    udp: true
+  - name: _CH_@M4nifest0_157
+    server: 185.126.116.124
+    port: 9043
+    type: ss
+    cipher: aes-256-cfb
+    password: HSZuyJQcWe8dxNdF
+    udp: true
+  - name: _CH_@M4nifest0_158
+    server: 185.126.116.124
+    port: 9000
+    type: ss
+    cipher: aes-256-cfb
+    password: a3GFYt36Sm82Vys9
+    udp: true
+  - name: _CH_@M4nifest0_159
+    server: 185.126.116.124
+    port: 9020
+    type: ss
+    cipher: aes-256-cfb
+    password: BNmAXXxAHYpTRdzu
+    udp: true
+  - name: _CH_@M4nifest0_160
+    server: 185.126.116.124
+    port: 9031
+    type: ss
+    cipher: aes-256-cfb
+    password: BwcAUZk8hUFAkDGN
+    udp: true
+  - name: _CH_@M4nifest0_161
+    server: 185.126.116.124
+    port: 9045
+    type: ss
+    cipher: aes-256-cfb
+    password: Lp27rqyJq72bZsqX
+    udp: true
+  - name: _CH_@M4nifest0_162
+    server: 185.126.116.124
+    port: 9084
+    type: ss
+    cipher: aes-256-cfb
+    password: c3NtHJ5ujV2tGDfj
+    udp: true
+  - name: _CH_@M4nifest0_163
+    server: 185.126.116.124
+    port: 9007
+    type: ss
+    cipher: aes-256-cfb
+    password: kSPmvwdFzGMMW5pY
+    udp: true
+  - name: _CH_@M4nifest0_164
+    server: 185.126.116.124
+    port: 9040
+    type: ss
+    cipher: aes-256-cfb
+    password: p9z5BVADH2YFs3MN
+    udp: true
+  - name: _CH_@M4nifest0_165
+    server: 185.126.116.124
+    port: 9011
+    type: ss
+    cipher: aes-256-cfb
+    password: M3t2ZEQcMGRWBjRa
+    udp: true
+  - name: _CH_@M4nifest0_166
+    server: 185.126.116.124
+    port: 9008
+    type: ss
+    cipher: aes-256-cfb
+    password: y9VURyNzJWNRYEGQ
+    udp: true
+  - name: _CH_@M4nifest0_167
+    server: 185.126.116.124
+    port: 9057
+    type: ss
+    cipher: aes-256-cfb
+    password: wjTugX3ZtHMB9c3Z
+    udp: true
+  - name: _CH_@M4nifest0_168
+    server: 185.126.116.124
+    port: 9015
+    type: ss
+    cipher: aes-256-cfb
+    password: ZpNDDKRu9MagNvaf
+    udp: true
+  - name: _CH_@M4nifest0_169
+    server: 185.126.116.124
+    port: 9037
+    type: ss
+    cipher: aes-256-cfb
+    password: TN2YqghxeFDKZfLU
+    udp: true
+  - name: _CH_@M4nifest0_170
+    server: 185.126.116.124
+    port: 9042
+    type: ss
+    cipher: aes-256-cfb
+    password: S7KwUu7yBy58S3Ga
+    udp: true
+  - name: _CH_@M4nifest0_171
+    server: 185.126.116.124
+    port: 9018
+    type: ss
+    cipher: aes-256-cfb
+    password: fG2artUmHfNT2cX7
+    udp: true
+  - name: _CH_@M4nifest0_172
+    server: 185.126.116.124
+    port: 9064
+    type: ss
+    cipher: aes-256-cfb
+    password: cp8pRSUAyLhTfVWH
+    udp: true
+  - name: _CH_@M4nifest0_173
+    server: 185.126.116.124
+    port: 9025
+    type: ss
+    cipher: aes-256-cfb
+    password: XPtzA9sCug3SPR4c
+    udp: true
+  - name: _CH_@M4nifest0_174
+    server: 185.126.116.124
+    port: 9088
+    type: ss
+    cipher: aes-256-cfb
+    password: f8npKgNzdkss2ytn
+    udp: true
+  - name: _CH_@M4nifest0_175
+    server: 185.126.116.124
+    port: 9026
+    type: ss
+    cipher: aes-256-cfb
+    password: QWDDvVE9npNurQfA
+    udp: true
+  - name: _CH_@M4nifest0_176
+    server: 185.126.116.124
+    port: 9001
+    type: ss
+    cipher: aes-256-cfb
+    password: UkXRsXvR6buDMG2Y
+    udp: true
+  - name: _CH_@M4nifest0_177
+    server: 185.126.116.124
+    port: 9053
+    type: ss
+    cipher: aes-256-cfb
+    password: SBM7R883jBmnqe6C
+    udp: true
+  - name: _CH_@M4nifest0_178
+    server: 185.126.116.124
+    port: 9027
+    type: ss
+    cipher: aes-256-cfb
+    password: EXN3S3eQpjE7EJu8
+    udp: true
+  - name: _CH_@M4nifest0_179
+    server: 185.126.116.124
+    port: 9010
+    type: ss
+    cipher: aes-256-cfb
+    password: f63gg8EruDnUrmz4
+    udp: true
+  - name: _DE_@M4nifest0_180
+    server: 5.183.179.140
+    port: 9094
+    type: ss
+    cipher: aes-256-cfb
+    password: rpgbNnU9rDDU4aWZ
+    udp: true
+  - name: _DE_@M4nifest0_181
+    server: 5.183.179.140
+    port: 9032
+    type: ss
+    cipher: aes-256-cfb
+    password: UWZQeLRWnkqgkseq
+    udp: true
+  - name: _DE_@M4nifest0_182
+    server: 5.183.179.140
+    port: 9059
+    type: ss
+    cipher: aes-256-cfb
+    password: 9XwYyZsK8SNzQDtY
+    udp: true
+  - name: _DE_@M4nifest0_183
+    server: 5.183.179.140
+    port: 9050
+    type: ss
+    cipher: aes-256-cfb
+    password: FG5ddLsMPbV5CutE
+    udp: true
+  - name: _DE_@M4nifest0_184
+    server: 5.183.179.140
+    port: 9046
+    type: ss
+    cipher: aes-256-cfb
+    password: NvS8N4Vf8qAGPSCL
+    udp: true
+  - name: _DE_@M4nifest0_185
+    server: 5.183.179.140
+    port: 9073
+    type: ss
+    cipher: aes-256-cfb
+    password: daFYagqDdBdA6VTX
+    udp: true
+  - name: _DE_@M4nifest0_186
+    server: 5.183.179.140
+    port: 9097
+    type: ss
+    cipher: aes-256-cfb
+    password: Sn5B7jTqr76aCJT8
+    udp: true
+  - name: _DE_@M4nifest0_187
+    server: 5.183.179.140
+    port: 9014
+    type: ss
+    cipher: aes-256-cfb
+    password: KnJGad3FqTvjqbaX
+    udp: true
+  - name: _DE_@M4nifest0_188
+    server: 5.183.179.140
+    port: 9000
+    type: ss
+    cipher: aes-256-cfb
+    password: a3GFYt36Sm82Vys9
+    udp: true
+  - name: _DE_@M4nifest0_189
+    server: 5.183.179.140
+    port: 9007
+    type: ss
+    cipher: aes-256-cfb
+    password: kSPmvwdFzGMMW5pY
+    udp: true
+  - name: _DE_@M4nifest0_190
+    server: 5.183.179.140
+    port: 9011
+    type: ss
+    cipher: aes-256-cfb
+    password: M3t2ZEQcMGRWBjRa
+    udp: true
+  - name: _DE_@M4nifest0_191
+    server: 5.183.179.140
+    port: 9015
+    type: ss
+    cipher: aes-256-cfb
+    password: ZpNDDKRu9MagNvaf
+    udp: true
+  - name: _DE_@M4nifest0_192
+    server: 5.183.179.140
+    port: 9037
+    type: ss
+    cipher: aes-256-cfb
+    password: TN2YqghxeFDKZfLU
+    udp: true
+  - name: _DE_@M4nifest0_193
+    server: 5.183.179.140
+    port: 9042
+    type: ss
+    cipher: aes-256-cfb
+    password: S7KwUu7yBy58S3Ga
+    udp: true
+  - name: _DE_@M4nifest0_194
+    server: 5.183.179.140
+    port: 9025
+    type: ss
+    cipher: aes-256-cfb
+    password: XPtzA9sCug3SPR4c
+    udp: true
+  - name: _DE_@M4nifest0_195
+    server: 5.183.179.140
+    port: 9088
+    type: ss
+    cipher: aes-256-cfb
+    password: f8npKgNzdkss2ytn
+    udp: true
+  - name: _DE_@M4nifest0_196
+    server: 5.183.179.140
+    port: 9026
+    type: ss
+    cipher: aes-256-cfb
+    password: QWDDvVE9npNurQfA
+    udp: true
+  - name: _DE_@M4nifest0_197
+    server: 5.183.179.140
+    port: 9001
+    type: ss
+    cipher: aes-256-cfb
+    password: UkXRsXvR6buDMG2Y
+    udp: true
+  - name: _DE_@M4nifest0_198
+    server: 5.183.179.140
+    port: 9053
+    type: ss
+    cipher: aes-256-cfb
+    password: SBM7R883jBmnqe6C
+    udp: true
+  - name: _DE_@M4nifest0_199
+    server: 5.183.179.146
+    port: 9060
+    type: ss
+    cipher: aes-256-cfb
+    password: ueLXVkvh4hckhErQ
+    udp: true
+  - name: _DE_@M4nifest0_200
+    server: 5.183.179.146
+    port: 9070
+    type: ss
+    cipher: aes-256-cfb
+    password: bf7v334KKDV3YDhH
+    udp: true
+  - name: _DE_@M4nifest0_201
+    server: 5.183.179.146
+    port: 9032
+    type: ss
+    cipher: aes-256-cfb
+    password: UWZQeLRWnkqgkseq
+    udp: true
+  - name: _DE_@M4nifest0_202
+    server: 5.183.179.146
+    port: 9059
+    type: ss
+    cipher: aes-256-cfb
+    password: 9XwYyZsK8SNzQDtY
+    udp: true
+  - name: _DE_@M4nifest0_203
+    server: 5.183.179.146
+    port: 9073
+    type: ss
+    cipher: aes-256-cfb
+    password: daFYagqDdBdA6VTX
+    udp: true
+  - name: _DE_@M4nifest0_204
+    server: 5.183.179.146
+    port: 9006
+    type: ss
+    cipher: aes-256-cfb
+    password: FAdUvMJUq5vDgKEq
+    udp: true
+  - name: _DE_@M4nifest0_205
+    server: 5.183.179.146
+    port: 9014
+    type: ss
+    cipher: aes-256-cfb
+    password: KnJGad3FqTvjqbaX
+    udp: true
+  - name: _DE_@M4nifest0_206
+    server: 5.183.179.146
+    port: 9098
+    type: ss
+    cipher: aes-256-cfb
+    password: aLpQtfEZe445QyHk
+    udp: true
+  - name: _DE_@M4nifest0_207
+    server: 5.183.179.146
+    port: 9084
+    type: ss
+    cipher: aes-256-cfb
+    password: c3NtHJ5ujV2tGDfj
+    udp: true
+  - name: _DE_@M4nifest0_208
+    server: 5.183.179.146
+    port: 9008
+    type: ss
+    cipher: aes-256-cfb
+    password: y9VURyNzJWNRYEGQ
+    udp: true
+  - name: _DE_@M4nifest0_209
+    server: 5.183.179.146
+    port: 9042
+    type: ss
+    cipher: aes-256-cfb
+    password: S7KwUu7yBy58S3Ga
+    udp: true
+  - name: _DE_@M4nifest0_210
+    server: 5.183.179.146
+    port: 9018
+    type: ss
+    cipher: aes-256-cfb
+    password: fG2artUmHfNT2cX7
+    udp: true
+  - name: _DE_@M4nifest0_211
+    server: 5.183.179.146
+    port: 9001
+    type: ss
+    cipher: aes-256-cfb
+    password: UkXRsXvR6buDMG2Y
+    udp: true
+  - name: _DE_@M4nifest0_212
+    server: 5.183.179.146
+    port: 9027
+    type: ss
+    cipher: aes-256-cfb
+    password: EXN3S3eQpjE7EJu8
+    udp: true
+  - name: _DE_@M4nifest0_213
+    server: 5.183.179.170
+    port: 9070
+    type: ss
+    cipher: aes-256-cfb
+    password: bf7v334KKDV3YDhH
+    udp: true
+  - name: _DE_@M4nifest0_214
+    server: 5.183.179.170
+    port: 9032
+    type: ss
+    cipher: aes-256-cfb
+    password: UWZQeLRWnkqgkseq
+    udp: true
+  - name: _DE_@M4nifest0_215
+    server: 5.183.179.170
+    port: 9038
+    type: ss
+    cipher: aes-256-cfb
+    password: gYCYXfkUQEs2TaJQ
+    udp: true
+  - name: _DE_@M4nifest0_216
+    server: 5.183.179.170
+    port: 9046
+    type: ss
+    cipher: aes-256-cfb
+    password: NvS8N4Vf8qAGPSCL
+    udp: true
+  - name: _DE_@M4nifest0_217
+    server: 5.183.179.170
+    port: 9014
+    type: ss
+    cipher: aes-256-cfb
+    password: KnJGad3FqTvjqbaX
+    udp: true
+  - name: _DE_@M4nifest0_218
+    server: 5.183.179.170
+    port: 9020
+    type: ss
+    cipher: aes-256-cfb
+    password: BNmAXXxAHYpTRdzu
+    udp: true
+  - name: _DE_@M4nifest0_219
+    server: 5.183.179.170
+    port: 9084
+    type: ss
+    cipher: aes-256-cfb
+    password: c3NtHJ5ujV2tGDfj
+    udp: true
+  - name: _DE_@M4nifest0_220
+    server: 5.183.179.170
+    port: 9008
+    type: ss
+    cipher: aes-256-cfb
+    password: y9VURyNzJWNRYEGQ
+    udp: true
+  - name: _DE_@M4nifest0_221
+    server: 5.183.179.170
+    port: 9037
+    type: ss
+    cipher: aes-256-cfb
+    password: TN2YqghxeFDKZfLU
+    udp: true
+  - name: _DE_@M4nifest0_222
+    server: 5.183.179.170
+    port: 9064
+    type: ss
+    cipher: aes-256-cfb
+    password: cp8pRSUAyLhTfVWH
+    udp: true
+  - name: _DE_@M4nifest0_223
+    server: 5.183.179.170
+    port: 9088
+    type: ss
+    cipher: aes-256-cfb
+    password: f8npKgNzdkss2ytn
+    udp: true
+  - name: _DE_@M4nifest0_224
+    server: 5.183.179.170
+    port: 9026
+    type: ss
+    cipher: aes-256-cfb
+    password: QWDDvVE9npNurQfA
+    udp: true
+  - name: _DE_@M4nifest0_225
+    server: 5.183.179.170
+    port: 9001
+    type: ss
+    cipher: aes-256-cfb
+    password: UkXRsXvR6buDMG2Y
+    udp: true
+  - name: _DE_@M4nifest0_226
+    server: 5.183.179.170
+    port: 9053
+    type: ss
+    cipher: aes-256-cfb
+    password: SBM7R883jBmnqe6C
+    udp: true
+  - name: _RU_@M4nifest0_227
+    server: 213.183.53.200
+    port: 9026
+    type: ss
+    cipher: aes-256-cfb
+    password: QWDDvVE9npNurQfA
+    udp: true
+  - name: _RU_@M4nifest0_228
+    server: 213.183.53.200
+    port: 9041
+    type: ss
+    cipher: aes-256-cfb
+    password: U6qnYRhfyDmn8sgn
+    udp: true
+  - name: _RU_@M4nifest0_229
+    server: 213.183.53.200
+    port: 9053
+    type: ss
+    cipher: aes-256-cfb
+    password: SBM7R883jBmnqe6C
+    udp: true
+  - name: _RU_@M4nifest0_230
+    server: 213.183.53.200
+    port: 9057
+    type: ss
+    cipher: aes-256-cfb
+    password: wjTugX3ZtHMB9c3Z
+    udp: true
+  - name: _RU_@M4nifest0_231
+    server: 213.183.53.200
+    port: 9064
+    type: ss
+    cipher: aes-256-cfb
+    password: cp8pRSUAyLhTfVWH
+    udp: true
+  - name: _RU_@M4nifest0_232
+    server: 213.183.53.200
+    port: 9093
+    type: ss
+    cipher: aes-256-cfb
+    password: wfLC2y7rzZyCmuyt
+    udp: true
+  - name: _RU_@M4nifest0_233
+    server: 213.183.53.196
+    port: 9001
+    type: ss
+    cipher: aes-256-cfb
+    password: UkXRsXvR6buDMG2Y
+    udp: true
+  - name: _RU_@M4nifest0_234
+    server: 213.183.53.196
+    port: 9006
+    type: ss
+    cipher: aes-256-cfb
+    password: FAdUvMJUq5vDgKEq
+    udp: true
+  - name: _NL_@M4nifest0_235
+    server: 213.183.51.171
+    port: 9011
+    type: ss
+    cipher: aes-256-cfb
+    password: M3t2ZEQcMGRWBjRa
+    udp: true
+  - name: _NL_@M4nifest0_236
+    server: 213.183.51.171
+    port: 9015
+    type: ss
+    cipher: aes-256-cfb
+    password: ZpNDDKRu9MagNvaf
+    udp: true
+  - name: _NL_@M4nifest0_237
+    server: 213.183.51.171
+    port: 9018
+    type: ss
+    cipher: aes-256-cfb
+    password: fG2artUmHfNT2cX7
+    udp: true
+  - name: _NL_@M4nifest0_238
+    server: 213.183.51.171
+    port: 9019
+    type: ss
+    cipher: aes-256-cfb
+    password: GA9KzeEgvfxNrgmM
+    udp: true
+  - name: _NL_@M4nifest0_239
+    server: 213.183.51.171
+    port: 9031
+    type: ss
+    cipher: aes-256-cfb
+    password: BwcAUZk8hUFAkDGN
+    udp: true
+  - name: _NL_@M4nifest0_240
+    server: 213.183.51.171
+    port: 9032
+    type: ss
+    cipher: aes-256-cfb
+    password: UWZQeLRWnkqgkseq
+    udp: true
+  - name: _NL_@M4nifest0_241
+    server: 213.183.51.171
+    port: 9033
+    type: ss
+    cipher: aes-256-cfb
+    password: UTJA57ypk2XKQpnm
+    udp: true
+  - name: _NL_@M4nifest0_242
+    server: 213.183.51.171
+    port: 9037
+    type: ss
+    cipher: aes-256-cfb
+    password: TN2YqghxeFDKZfLU
+    udp: true
+  - name: _NL_@M4nifest0_243
+    server: 213.183.51.171
+    port: 9038
+    type: ss
+    cipher: aes-256-cfb
+    password: gYCYXfkUQEs2TaJQ
+    udp: true
+  - name: _NL_@M4nifest0_244
+    server: 213.183.51.171
+    port: 9042
+    type: ss
+    cipher: aes-256-cfb
+    password: S7KwUu7yBy58S3Ga
+    udp: true
+  - name: _NL_@M4nifest0_245
+    server: 213.183.51.171
+    port: 9043
+    type: ss
+    cipher: aes-256-cfb
+    password: HSZuyJQcWe8dxNdF
+    udp: true
+  - name: _NL_@M4nifest0_246
+    server: 213.183.51.171
+    port: 9045
+    type: ss
+    cipher: aes-256-cfb
+    password: Lp27rqyJq72bZsqX
+    udp: true
+  - name: _NL_@M4nifest0_247
+    server: 213.183.51.171
+    port: 9046
+    type: ss
+    cipher: aes-256-cfb
+    password: NvS8N4Vf8qAGPSCL
+    udp: true
+  - name: _NL_@M4nifest0_248
+    server: 213.183.51.171
+    port: 9064
+    type: ss
+    cipher: aes-256-cfb
+    password: cp8pRSUAyLhTfVWH
+    udp: true
+  - name: _NL_@M4nifest0_249
+    server: 213.183.51.171
+    port: 9073
+    type: ss
+    cipher: aes-256-cfb
+    password: daFYagqDdBdA6VTX
+    udp: true
+  - name: _NL_@M4nifest0_250
+    server: 213.183.51.171
+    port: 9084
+    type: ss
+    cipher: aes-256-cfb
+    password: c3NtHJ5ujV2tGDfj
+    udp: true
+  - name: _NL_@M4nifest0_251
+    server: 213.183.51.171
+    port: 9093
+    type: ss
+    cipher: aes-256-cfb
+    password: wfLC2y7rzZyCmuyt
+    udp: true
+  - name: _NL_@M4nifest0_252
+    server: 213.183.59.229
+    port: 9000
+    type: ss
+    cipher: aes-256-cfb
+    password: a3GFYt36Sm82Vys9
+    udp: true
+  - name: _NL_@M4nifest0_253
+    server: 213.183.59.229
+    port: 9001
+    type: ss
+    cipher: aes-256-cfb
+    password: UkXRsXvR6buDMG2Y
+    udp: true
+  - name: _NL_@M4nifest0_254
+    server: 213.183.59.229
+    port: 9003
+    type: ss
+    cipher: aes-256-cfb
+    password: JdmRK9gMEqFgs8nP
+    udp: true
+  - name: _NL_@M4nifest0_255
+    server: 213.183.59.229
+    port: 9007
+    type: ss
+    cipher: aes-256-cfb
+    password: kSPmvwdFzGMMW5pY
+    udp: true
+  - name: _NL_@M4nifest0_256
+    server: 213.183.59.229
+    port: 9018
+    type: ss
+    cipher: aes-256-cfb
+    password: fG2artUmHfNT2cX7
+    udp: true
+  - name: _NL_@M4nifest0_257
+    server: 213.183.59.229
+    port: 9025
+    type: ss
+    cipher: aes-256-cfb
+    password: XPtzA9sCug3SPR4c
+    udp: true
+  - name: _NL_@M4nifest0_258
+    server: 213.183.59.229
+    port: 9026
+    type: ss
+    cipher: aes-256-cfb
+    password: QWDDvVE9npNurQfA
+    udp: true
+  - name: _NL_@M4nifest0_259
+    server: 213.183.59.229
+    port: 9033
+    type: ss
+    cipher: aes-256-cfb
+    password: UTJA57ypk2XKQpnm
+    udp: true
+  - name: _NL_@M4nifest0_260
+    server: 213.183.59.229
+    port: 9037
+    type: ss
+    cipher: aes-256-cfb
+    password: TN2YqghxeFDKZfLU
+    udp: true
+  - name: _NL_@M4nifest0_261
+    server: 213.183.59.229
+    port: 9040
+    type: ss
+    cipher: aes-256-cfb
+    password: p9z5BVADH2YFs3MN
+    udp: true
+  - name: _NL_@M4nifest0_262
+    server: 213.183.59.229
+    port: 9046
+    type: ss
+    cipher: aes-256-cfb
+    password: NvS8N4Vf8qAGPSCL
+    udp: true
+  - name: _NL_@M4nifest0_263
+    server: 213.183.59.229
+    port: 9057
+    type: ss
+    cipher: aes-256-cfb
+    password: wjTugX3ZtHMB9c3Z
+    udp: true
+  - name: _NL_@M4nifest0_264
+    server: 213.183.59.229
+    port: 9064
+    type: ss
+    cipher: aes-256-cfb
+    password: cp8pRSUAyLhTfVWH
+    udp: true
+  - name: _NL_@M4nifest0_265
+    server: 213.183.59.229
+    port: 9084
+    type: ss
+    cipher: aes-256-cfb
+    password: c3NtHJ5ujV2tGDfj
+    udp: true
+  - name: _NL_@M4nifest0_266
+    server: 213.183.59.229
+    port: 9094
+    type: ss
+    cipher: aes-256-cfb
+    password: rpgbNnU9rDDU4aWZ
+    udp: true
+  - name: _NL_@M4nifest0_267
+    server: 213.183.59.231
+    port: 9003
+    type: ss
+    cipher: aes-256-cfb
+    password: JdmRK9gMEqFgs8nP
+    udp: true
+  - name: _NL_@M4nifest0_268
+    server: 213.183.59.231
+    port: 9005
+    type: ss
+    cipher: aes-256-cfb
+    password: ZET59LF6DvCC8KVt
+    udp: true
+  - name: _NL_@M4nifest0_269
+    server: 213.183.59.231
+    port: 9006
+    type: ss
+    cipher: aes-256-cfb
+    password: FAdUvMJUq5vDgKEq
+    udp: true
+  - name: _NL_@M4nifest0_270
+    server: 213.183.59.231
+    port: 9007
+    type: ss
+    cipher: aes-256-cfb
+    password: kSPmvwdFzGMMW5pY
+    udp: true
+  - name: _NL_@M4nifest0_271
+    server: 213.183.59.231
+    port: 9008
+    type: ss
+    cipher: aes-256-cfb
+    password: y9VURyNzJWNRYEGQ
+    udp: true
+  - name: _NL_@M4nifest0_272
+    server: 213.183.59.231
+    port: 9014
+    type: ss
+    cipher: aes-256-cfb
+    password: KnJGad3FqTvjqbaX
+    udp: true
+  - name: _NL_@M4nifest0_273
+    server: 213.183.59.231
+    port: 9020
+    type: ss
+    cipher: aes-256-cfb
+    password: BNmAXXxAHYpTRdzu
+    udp: true
+  - name: _NL_@M4nifest0_274
+    server: 213.183.59.231
+    port: 9024
+    type: ss
+    cipher: aes-256-cfb
+    password: BejrQvtu9sqUeNuZ
+    udp: true
+  - name: _NL_@M4nifest0_275
+    server: 213.183.59.231
+    port: 9027
+    type: ss
+    cipher: aes-256-cfb
+    password: EXN3S3eQpjE7EJu8
+    udp: true
+  - name: _NL_@M4nifest0_276
+    server: 213.183.59.231
+    port: 9031
+    type: ss
+    cipher: aes-256-cfb
+    password: BwcAUZk8hUFAkDGN
+    udp: true
+  - name: _NL_@M4nifest0_277
+    server: 213.183.59.231
+    port: 9038
+    type: ss
+    cipher: aes-256-cfb
+    password: gYCYXfkUQEs2TaJQ
+    udp: true
+  - name: _NL_@M4nifest0_278
+    server: 213.183.59.231
+    port: 9040
+    type: ss
+    cipher: aes-256-cfb
+    password: p9z5BVADH2YFs3MN
+    udp: true
+  - name: _NL_@M4nifest0_279
+    server: 213.183.59.231
+    port: 9043
+    type: ss
+    cipher: aes-256-cfb
+    password: HSZuyJQcWe8dxNdF
+    udp: true
+  - name: _NL_@M4nifest0_280
+    server: 213.183.59.231
+    port: 9045
+    type: ss
+    cipher: aes-256-cfb
+    password: Lp27rqyJq72bZsqX
+    udp: true
+  - name: _NL_@M4nifest0_281
+    server: 213.183.59.231
+    port: 9046
+    type: ss
+    cipher: aes-256-cfb
+    password: NvS8N4Vf8qAGPSCL
+    udp: true
+  - name: _NL_@M4nifest0_282
+    server: 213.183.59.231
+    port: 9053
+    type: ss
+    cipher: aes-256-cfb
+    password: SBM7R883jBmnqe6C
+    udp: true
+  - name: _NL_@M4nifest0_283
+    server: 213.183.59.231
+    port: 9056
+    type: ss
+    cipher: aes-256-cfb
+    password: rNBfNuuANFCAk7KB
+    udp: true
+  - name: _NL_@M4nifest0_284
+    server: 213.183.59.231
+    port: 9057
+    type: ss
+    cipher: aes-256-cfb
+    password: wjTugX3ZtHMB9c3Z
+    udp: true
+  - name: _NL_@M4nifest0_285
+    server: 213.183.59.231
+    port: 9059
+    type: ss
+    cipher: aes-256-cfb
+    password: 9XwYyZsK8SNzQDtY
+    udp: true
+  - name: _NL_@M4nifest0_286
+    server: 213.183.59.231
+    port: 9060
+    type: ss
+    cipher: aes-256-cfb
+    password: ueLXVkvh4hckhErQ
+    udp: true
+  - name: _NL_@M4nifest0_287
+    server: 213.183.59.231
+    port: 9073
+    type: ss
+    cipher: aes-256-cfb
+    password: daFYagqDdBdA6VTX
+    udp: true
+  - name: _NL_@M4nifest0_288
+    server: 213.183.59.231
+    port: 9093
+    type: ss
+    cipher: aes-256-cfb
+    password: wfLC2y7rzZyCmuyt
+    udp: true
+  - name: _CH_@M4nifest0_289
+    server: 185.126.116.117
+    port: 9033
+    type: ss
+    cipher: aes-256-cfb
+    password: UTJA57ypk2XKQpnm
+    udp: true
+  - name: _CH_@M4nifest0_290
+    server: 185.126.116.117
+    port: 9019
+    type: ss
+    cipher: aes-256-cfb
+    password: GA9KzeEgvfxNrgmM
+    udp: true
+  - name: _CH_@M4nifest0_291
+    server: 185.126.116.117
+    port: 9060
+    type: ss
+    cipher: aes-256-cfb
+    password: ueLXVkvh4hckhErQ
+    udp: true
+  - name: _CH_@M4nifest0_292
+    server: 185.126.116.117
+    port: 9005
+    type: ss
+    cipher: aes-256-cfb
+    password: ZET59LF6DvCC8KVt
+    udp: true
+  - name: _CH_@M4nifest0_293
+    server: 185.126.116.117
+    port: 9024
+    type: ss
+    cipher: aes-256-cfb
+    password: BejrQvtu9sqUeNuZ
+    udp: true
+  - name: _CH_@M4nifest0_294
+    server: 185.126.116.117
+    port: 9041
+    type: ss
+    cipher: aes-256-cfb
+    password: U6qnYRhfyDmn8sgn
+    udp: true
+  - name: _CH_@M4nifest0_295
+    server: 185.126.116.117
+    port: 9094
+    type: ss
+    cipher: aes-256-cfb
+    password: rpgbNnU9rDDU4aWZ
+    udp: true
+  - name: _CH_@M4nifest0_296
+    server: 185.126.116.117
+    port: 9093
+    type: ss
+    cipher: aes-256-cfb
+    password: wfLC2y7rzZyCmuyt
+    udp: true
+  - name: _CH_@M4nifest0_297
+    server: 185.126.116.117
+    port: 9070
+    type: ss
+    cipher: aes-256-cfb
+    password: bf7v334KKDV3YDhH
+    udp: true
+  - name: _CH_@M4nifest0_298
+    server: 185.126.116.117
+    port: 9032
+    type: ss
+    cipher: aes-256-cfb
+    password: UWZQeLRWnkqgkseq
+    udp: true
+  - name: _CH_@M4nifest0_299
+    server: 185.126.116.117
+    port: 9059
+    type: ss
+    cipher: aes-256-cfb
+    password: 9XwYyZsK8SNzQDtY
+    udp: true
+  - name: _CH_@M4nifest0_300
+    server: 185.126.116.117
+    port: 9050
+    type: ss
+    cipher: aes-256-cfb
+    password: FG5ddLsMPbV5CutE
+    udp: true
+  - name: _CH_@M4nifest0_301
+    server: 185.126.116.117
+    port: 9038
+    type: ss
+    cipher: aes-256-cfb
+    password: gYCYXfkUQEs2TaJQ
+    udp: true
+  - name: _CH_@M4nifest0_302
+    server: 185.126.116.117
+    port: 9046
+    type: ss
+    cipher: aes-256-cfb
+    password: NvS8N4Vf8qAGPSCL
+    udp: true
+  - name: _CH_@M4nifest0_303
+    server: 185.126.116.117
+    port: 9073
+    type: ss
+    cipher: aes-256-cfb
+    password: daFYagqDdBdA6VTX
+    udp: true
+  - name: _CH_@M4nifest0_304
+    server: 185.126.116.117
+    port: 9006
+    type: ss
+    cipher: aes-256-cfb
+    password: FAdUvMJUq5vDgKEq
+    udp: true
+  - name: _CH_@M4nifest0_305
+    server: 185.126.116.117
+    port: 9097
+    type: ss
+    cipher: aes-256-cfb
+    password: Sn5B7jTqr76aCJT8
+    udp: true
+  - name: _CH_@M4nifest0_306
+    server: 185.126.116.117
+    port: 9056
+    type: ss
+    cipher: aes-256-cfb
+    password: rNBfNuuANFCAk7KB
+    udp: true
+  - name: _CH_@M4nifest0_307
+    server: 185.126.116.117
+    port: 9014
+    type: ss
+    cipher: aes-256-cfb
+    password: KnJGad3FqTvjqbaX
+    udp: true
+  - name: _CH_@M4nifest0_308
+    server: 185.126.116.117
+    port: 9079
+    type: ss
+    cipher: aes-256-cfb
+    password: TPqX8edgbAURcAMb
+    udp: true
+  - name: _CH_@M4nifest0_309
+    server: 185.126.116.117
+    port: 9098
+    type: ss
+    cipher: aes-256-cfb
+    password: aLpQtfEZe445QyHk
+    udp: true
+  - name: _CH_@M4nifest0_310
+    server: 185.126.116.117
+    port: 9043
+    type: ss
+    cipher: aes-256-cfb
+    password: HSZuyJQcWe8dxNdF
+    udp: true
+  - name: _CH_@M4nifest0_311
+    server: 185.126.116.117
+    port: 9000
+    type: ss
+    cipher: aes-256-cfb
+    password: a3GFYt36Sm82Vys9
+    udp: true
+  - name: _CH_@M4nifest0_312
+    server: 185.126.116.117
+    port: 9020
+    type: ss
+    cipher: aes-256-cfb
+    password: BNmAXXxAHYpTRdzu
+    udp: true
+  - name: _CH_@M4nifest0_313
+    server: 185.126.116.117
+    port: 9031
+    type: ss
+    cipher: aes-256-cfb
+    password: BwcAUZk8hUFAkDGN
+    udp: true
+  - name: _CH_@M4nifest0_314
+    server: 185.126.116.117
+    port: 9045
+    type: ss
+    cipher: aes-256-cfb
+    password: Lp27rqyJq72bZsqX
+    udp: true
+  - name: _CH_@M4nifest0_315
+    server: 185.126.116.117
+    port: 9084
+    type: ss
+    cipher: aes-256-cfb
+    password: c3NtHJ5ujV2tGDfj
+    udp: true
+  - name: _CH_@M4nifest0_316
+    server: 185.126.116.117
+    port: 9007
+    type: ss
+    cipher: aes-256-cfb
+    password: kSPmvwdFzGMMW5pY
+    udp: true
+  - name: _CH_@M4nifest0_317
+    server: 185.126.116.117
+    port: 9040
+    type: ss
+    cipher: aes-256-cfb
+    password: p9z5BVADH2YFs3MN
+    udp: true
+  - name: _CH_@M4nifest0_318
+    server: 185.126.116.117
+    port: 9003
+    type: ss
+    cipher: aes-256-cfb
+    password: JdmRK9gMEqFgs8nP
+    udp: true
+  - name: _CH_@M4nifest0_319
+    server: 185.126.116.117
+    port: 9011
+    type: ss
+    cipher: aes-256-cfb
+    password: M3t2ZEQcMGRWBjRa
+    udp: true
+  - name: _CH_@M4nifest0_320
+    server: 185.126.116.117
+    port: 9008
+    type: ss
+    cipher: aes-256-cfb
+    password: y9VURyNzJWNRYEGQ
+    udp: true
+  - name: _CH_@M4nifest0_321
+    server: 185.126.116.117
+    port: 9057
+    type: ss
+    cipher: aes-256-cfb
+    password: wjTugX3ZtHMB9c3Z
+    udp: true
+  - name: _CH_@M4nifest0_322
+    server: 185.126.116.117
+    port: 9015
+    type: ss
+    cipher: aes-256-cfb
+    password: ZpNDDKRu9MagNvaf
+    udp: true
+  - name: _CH_@M4nifest0_323
+    server: 185.126.116.117
+    port: 9037
+    type: ss
+    cipher: aes-256-cfb
+    password: TN2YqghxeFDKZfLU
+    udp: true
+  - name: _CH_@M4nifest0_324
+    server: 185.126.116.117
+    port: 9042
+    type: ss
+    cipher: aes-256-cfb
+    password: S7KwUu7yBy58S3Ga
+    udp: true
+  - name: _CH_@M4nifest0_325
+    server: 185.126.116.117
+    port: 9018
+    type: ss
+    cipher: aes-256-cfb
+    password: fG2artUmHfNT2cX7
+    udp: true
+  - name: _CH_@M4nifest0_326
+    server: 185.126.116.117
+    port: 9064
+    type: ss
+    cipher: aes-256-cfb
+    password: cp8pRSUAyLhTfVWH
+    udp: true
+  - name: _CH_@M4nifest0_327
+    server: 185.126.116.117
+    port: 9025
+    type: ss
+    cipher: aes-256-cfb
+    password: XPtzA9sCug3SPR4c
+    udp: true
+  - name: _CH_@M4nifest0_328
+    server: 185.126.116.117
+    port: 9088
+    type: ss
+    cipher: aes-256-cfb
+    password: f8npKgNzdkss2ytn
+    udp: true
+  - name: _CH_@M4nifest0_329
+    server: 185.126.116.117
+    port: 9026
+    type: ss
+    cipher: aes-256-cfb
+    password: QWDDvVE9npNurQfA
+    udp: true
+  - name: _CH_@M4nifest0_330
+    server: 185.126.116.117
+    port: 9001
+    type: ss
+    cipher: aes-256-cfb
+    password: UkXRsXvR6buDMG2Y
+    udp: true
+  - name: _CH_@M4nifest0_331
+    server: 185.126.116.117
+    port: 9053
+    type: ss
+    cipher: aes-256-cfb
+    password: SBM7R883jBmnqe6C
+    udp: true
+  - name: _CH_@M4nifest0_332
+    server: 185.126.116.117
+    port: 9027
+    type: ss
+    cipher: aes-256-cfb
+    password: EXN3S3eQpjE7EJu8
+    udp: true
+  - name: _CH_@M4nifest0_333
+    server: 185.126.116.117
+    port: 9010
+    type: ss
+    cipher: aes-256-cfb
+    password: f63gg8EruDnUrmz4
+    udp: true
+  - name: _DE_@M4nifest0_334
+    server: 5.183.179.146
+    port: 9001
+    type: ss
+    cipher: aes-256-cfb
+    password: UkXRsXvR6buDMG2Y
+    udp: true
+  - name: _DE_@M4nifest0_335
+    server: 5.183.179.146
+    port: 9027
+    type: ss
+    cipher: aes-256-cfb
+    password: EXN3S3eQpjE7EJu8
+    udp: true
+  - name: _DE_@M4nifest0_336
+    server: 5.183.179.146
+    port: 9010
+    type: ss
+    cipher: aes-256-cfb
+    password: f63gg8EruDnUrmz4
+    udp: true
+  - name: _CH_@M4nifest0_337
+    server: 185.126.116.124
+    port: 9033
+    type: ss
+    cipher: aes-256-cfb
+    password: UTJA57ypk2XKQpnm
+    udp: true
+  - name: _CH_@M4nifest0_338
+    server: 185.126.116.124
+    port: 9019
+    type: ss
+    cipher: aes-256-cfb
+    password: GA9KzeEgvfxNrgmM
+    udp: true
+  - name: _CH_@M4nifest0_339
+    server: 185.126.116.124
+    port: 9060
+    type: ss
+    cipher: aes-256-cfb
+    password: ueLXVkvh4hckhErQ
+    udp: true
+  - name: _CH_@M4nifest0_340
+    server: 185.126.116.124
+    port: 9005
+    type: ss
+    cipher: aes-256-cfb
+    password: ZET59LF6DvCC8KVt
+    udp: true
+  - name: _CH_@M4nifest0_341
+    server: 185.126.116.124
+    port: 9024
+    type: ss
+    cipher: aes-256-cfb
+    password: BejrQvtu9sqUeNuZ
+    udp: true
+  - name: _CH_@M4nifest0_342
+    server: 185.126.116.124
+    port: 9041
+    type: ss
+    cipher: aes-256-cfb
+    password: U6qnYRhfyDmn8sgn
+    udp: true
+  - name: _CH_@M4nifest0_343
+    server: 185.126.116.124
+    port: 9094
+    type: ss
+    cipher: aes-256-cfb
+    password: rpgbNnU9rDDU4aWZ
+    udp: true
+  - name: _CH_@M4nifest0_344
+    server: 185.126.116.124
+    port: 9093
+    type: ss
+    cipher: aes-256-cfb
+    password: wfLC2y7rzZyCmuyt
+    udp: true
+  - name: _CH_@M4nifest0_345
+    server: 185.126.116.124
+    port: 9070
+    type: ss
+    cipher: aes-256-cfb
+    password: bf7v334KKDV3YDhH
+    udp: true
+  - name: _CH_@M4nifest0_346
+    server: 185.126.116.124
+    port: 9032
+    type: ss
+    cipher: aes-256-cfb
+    password: UWZQeLRWnkqgkseq
+    udp: true
+  - name: _CH_@M4nifest0_347
+    server: 185.126.116.124
+    port: 9059
+    type: ss
+    cipher: aes-256-cfb
+    password: 9XwYyZsK8SNzQDtY
+    udp: true
+  - name: _CH_@M4nifest0_348
+    server: 185.126.116.124
+    port: 9050
+    type: ss
+    cipher: aes-256-cfb
+    password: FG5ddLsMPbV5CutE
+    udp: true
+  - name: _CH_@M4nifest0_349
+    server: 185.126.116.124
+    port: 9038
+    type: ss
+    cipher: aes-256-cfb
+    password: gYCYXfkUQEs2TaJQ
+    udp: true
+  - name: _CH_@M4nifest0_350
+    server: 185.126.116.124
+    port: 9046
+    type: ss
+    cipher: aes-256-cfb
+    password: NvS8N4Vf8qAGPSCL
+    udp: true
+  - name: _CH_@M4nifest0_351
+    server: 185.126.116.124
+    port: 9073
+    type: ss
+    cipher: aes-256-cfb
+    password: daFYagqDdBdA6VTX
+    udp: true
+  - name: _CH_@M4nifest0_352
+    server: 185.126.116.124
+    port: 9097
+    type: ss
+    cipher: aes-256-cfb
+    password: Sn5B7jTqr76aCJT8
+    udp: true
+  - name: _CH_@M4nifest0_353
+    server: 185.126.116.124
+    port: 9056
+    type: ss
+    cipher: aes-256-cfb
+    password: rNBfNuuANFCAk7KB
+    udp: true
+  - name: _CH_@M4nifest0_354
+    server: 185.126.116.124
+    port: 9079
+    type: ss
+    cipher: aes-256-cfb
+    password: TPqX8edgbAURcAMb
+    udp: true
+  - name: _CH_@M4nifest0_355
+    server: 185.126.116.124
+    port: 9098
+    type: ss
+    cipher: aes-256-cfb
+    password: aLpQtfEZe445QyHk
+    udp: true
+  - name: _CH_@M4nifest0_356
+    server: 185.126.116.124
+    port: 9043
+    type: ss
+    cipher: aes-256-cfb
+    password: HSZuyJQcWe8dxNdF
+    udp: true
+  - name: _CH_@M4nifest0_357
+    server: 185.126.116.124
+    port: 9000
+    type: ss
+    cipher: aes-256-cfb
+    password: a3GFYt36Sm82Vys9
+    udp: true
+  - name: _CH_@M4nifest0_358
+    server: 185.126.116.124
+    port: 9020
+    type: ss
+    cipher: aes-256-cfb
+    password: BNmAXXxAHYpTRdzu
+    udp: true
+  - name: _CH_@M4nifest0_359
+    server: 185.126.116.124
+    port: 9031
+    type: ss
+    cipher: aes-256-cfb
+    password: BwcAUZk8hUFAkDGN
+    udp: true
+  - name: _CH_@M4nifest0_360
+    server: 185.126.116.124
+    port: 9045
+    type: ss
+    cipher: aes-256-cfb
+    password: Lp27rqyJq72bZsqX
+    udp: true
+  - name: _CH_@M4nifest0_361
+    server: 185.126.116.124
+    port: 9084
+    type: ss
+    cipher: aes-256-cfb
+    password: c3NtHJ5ujV2tGDfj
+    udp: true
+  - name: _CH_@M4nifest0_362
+    server: 185.126.116.124
+    port: 9007
+    type: ss
+    cipher: aes-256-cfb
+    password: kSPmvwdFzGMMW5pY
+    udp: true
+  - name: _CH_@M4nifest0_363
+    server: 185.126.116.124
+    port: 9040
+    type: ss
+    cipher: aes-256-cfb
+    password: p9z5BVADH2YFs3MN
+    udp: true
+  - name: _CH_@M4nifest0_364
+    server: 185.126.116.124
+    port: 9011
+    type: ss
+    cipher: aes-256-cfb
+    password: M3t2ZEQcMGRWBjRa
+    udp: true
+  - name: _CH_@M4nifest0_365
+    server: 185.126.116.124
+    port: 9008
+    type: ss
+    cipher: aes-256-cfb
+    password: y9VURyNzJWNRYEGQ
+    udp: true
+  - name: _CH_@M4nifest0_366
+    server: 185.126.116.124
+    port: 9057
+    type: ss
+    cipher: aes-256-cfb
+    password: wjTugX3ZtHMB9c3Z
+    udp: true
+  - name: _CH_@M4nifest0_367
+    server: 185.126.116.124
+    port: 9015
+    type: ss
+    cipher: aes-256-cfb
+    password: ZpNDDKRu9MagNvaf
+    udp: true
+  - name: _CH_@M4nifest0_368
+    server: 185.126.116.124
+    port: 9037
+    type: ss
+    cipher: aes-256-cfb
+    password: TN2YqghxeFDKZfLU
+    udp: true
+  - name: _CH_@M4nifest0_369
+    server: 185.126.116.124
+    port: 9042
+    type: ss
+    cipher: aes-256-cfb
+    password: S7KwUu7yBy58S3Ga
+    udp: true
+  - name: _CH_@M4nifest0_370
+    server: 185.126.116.124
+    port: 9018
+    type: ss
+    cipher: aes-256-cfb
+    password: fG2artUmHfNT2cX7
+    udp: true
+  - name: _CH_@M4nifest0_371
+    server: 185.126.116.124
+    port: 9064
+    type: ss
+    cipher: aes-256-cfb
+    password: cp8pRSUAyLhTfVWH
+    udp: true
+  - name: _CH_@M4nifest0_372
+    server: 185.126.116.124
+    port: 9025
+    type: ss
+    cipher: aes-256-cfb
+    password: XPtzA9sCug3SPR4c
+    udp: true
+  - name: _CH_@M4nifest0_373
+    server: 185.126.116.124
+    port: 9088
+    type: ss
+    cipher: aes-256-cfb
+    password: f8npKgNzdkss2ytn
+    udp: true
+  - name: _CH_@M4nifest0_374
+    server: 185.126.116.124
+    port: 9026
+    type: ss
+    cipher: aes-256-cfb
+    password: QWDDvVE9npNurQfA
+    udp: true
+  - name: _CH_@M4nifest0_375
+    server: 185.126.116.124
+    port: 9001
+    type: ss
+    cipher: aes-256-cfb
+    password: UkXRsXvR6buDMG2Y
+    udp: true
+  - name: _CH_@M4nifest0_376
+    server: 185.126.116.124
+    port: 9053
+    type: ss
+    cipher: aes-256-cfb
+    password: SBM7R883jBmnqe6C
+    udp: true
+  - name: _CH_@M4nifest0_377
+    server: 185.126.116.124
+    port: 9027
+    type: ss
+    cipher: aes-256-cfb
+    password: EXN3S3eQpjE7EJu8
+    udp: true
+  - name: _CH_@M4nifest0_378
+    server: 185.126.116.124
+    port: 9010
+    type: ss
+    cipher: aes-256-cfb
+    password: f63gg8EruDnUrmz4
+    udp: true
+proxy-groups:
+  - name: FASTSSH-SSHKIT-HOWDY
+    type: select
+    proxies:
+      - _DE_@M4nifest0_1
+      - _DE_@M4nifest0_2
+      - _DE_@M4nifest0_3
+      - _DE_@M4nifest0_4
+      - _DE_@M4nifest0_5
+      - _DE_@M4nifest0_6
+      - _DE_@M4nifest0_7
+      - _DE_@M4nifest0_8
+      - _DE_@M4nifest0_9
+      - _DE_@M4nifest0_10
+      - _DE_@M4nifest0_11
+      - _DE_@M4nifest0_12
+      - _DE_@M4nifest0_13
+      - _DE_@M4nifest0_14
+      - _DE_@M4nifest0_15
+      - _DE_@M4nifest0_16
+      - _DE_@M4nifest0_17
+      - _DE_@M4nifest0_18
+      - _DE_@M4nifest0_19
+      - _DE_@M4nifest0_20
+      - _DE_@M4nifest0_21
+      - _DE_@M4nifest0_22
+      - _DE_@M4nifest0_23
+      - _DE_@M4nifest0_24
+      - _DE_@M4nifest0_25
+      - _DE_@M4nifest0_26
+      - _DE_@M4nifest0_27
+      - _DE_@M4nifest0_28
+      - _DE_@M4nifest0_29
+      - _DE_@M4nifest0_30
+      - _DE_@M4nifest0_31
+      - _DE_@M4nifest0_32
+      - _DE_@M4nifest0_33
+      - _DE_@M4nifest0_34
+      - _DE_@M4nifest0_35
+      - _DE_@M4nifest0_36
+      - _DE_@M4nifest0_37
+      - _DE_@M4nifest0_38
+      - _DE_@M4nifest0_39
+      - _DE_@M4nifest0_40
+      - _DE_@M4nifest0_41
+      - _DE_@M4nifest0_42
+      - _RU_@M4nifest0_43
+      - _RU_@M4nifest0_44
+      - _RU_@M4nifest0_45
+      - _RU_@M4nifest0_46
+      - _RU_@M4nifest0_47
+      - _RU_@M4nifest0_48
+      - _RU_@M4nifest0_49
+      - _RU_@M4nifest0_50
+      - _NL_@M4nifest0_51
+      - _NL_@M4nifest0_52
+      - _NL_@M4nifest0_53
+      - _NL_@M4nifest0_54
+      - _NL_@M4nifest0_55
+      - _NL_@M4nifest0_56
+      - _NL_@M4nifest0_57
+      - _NL_@M4nifest0_58
+      - _NL_@M4nifest0_59
+      - _NL_@M4nifest0_60
+      - _NL_@M4nifest0_61
+      - _NL_@M4nifest0_62
+      - _NL_@M4nifest0_63
+      - _NL_@M4nifest0_64
+      - _NL_@M4nifest0_65
+      - _NL_@M4nifest0_66
+      - _NL_@M4nifest0_67
+      - _NL_@M4nifest0_68
+      - _NL_@M4nifest0_69
+      - _NL_@M4nifest0_70
+      - _NL_@M4nifest0_71
+      - _NL_@M4nifest0_72
+      - _NL_@M4nifest0_73
+      - _NL_@M4nifest0_74
+      - _NL_@M4nifest0_75
+      - _NL_@M4nifest0_76
+      - _NL_@M4nifest0_77
+      - _NL_@M4nifest0_78
+      - _NL_@M4nifest0_79
+      - _NL_@M4nifest0_80
+      - _NL_@M4nifest0_81
+      - _NL_@M4nifest0_82
+      - _NL_@M4nifest0_83
+      - _NL_@M4nifest0_84
+      - _NL_@M4nifest0_85
+      - _NL_@M4nifest0_86
+      - _NL_@M4nifest0_87
+      - _NL_@M4nifest0_88
+      - _CH_@M4nifest0_89
+      - _CH_@M4nifest0_90
+      - _CH_@M4nifest0_91
+      - _CH_@M4nifest0_92
+      - _CH_@M4nifest0_93
+      - _CH_@M4nifest0_94
+      - _CH_@M4nifest0_95
+      - _CH_@M4nifest0_96
+      - _CH_@M4nifest0_97
+      - _CH_@M4nifest0_98
+      - _CH_@M4nifest0_99
+      - _CH_@M4nifest0_100
+      - _CH_@M4nifest0_101
+      - _CH_@M4nifest0_102
+      - _CH_@M4nifest0_103
+      - _CH_@M4nifest0_104
+      - _CH_@M4nifest0_105
+      - _CH_@M4nifest0_106
+      - _CH_@M4nifest0_107
+      - _CH_@M4nifest0_108
+      - _CH_@M4nifest0_109
+      - _CH_@M4nifest0_110
+      - _CH_@M4nifest0_111
+      - _CH_@M4nifest0_112
+      - _CH_@M4nifest0_113
+      - _CH_@M4nifest0_114
+      - _CH_@M4nifest0_115
+      - _CH_@M4nifest0_116
+      - _CH_@M4nifest0_117
+      - _CH_@M4nifest0_118
+      - _CH_@M4nifest0_119
+      - _CH_@M4nifest0_120
+      - _CH_@M4nifest0_121
+      - _CH_@M4nifest0_122
+      - _CH_@M4nifest0_123
+      - _CH_@M4nifest0_124
+      - _CH_@M4nifest0_125
+      - _CH_@M4nifest0_126
+      - _CH_@M4nifest0_127
+      - _CH_@M4nifest0_128
+      - _CH_@M4nifest0_129
+      - _CH_@M4nifest0_130
+      - _CH_@M4nifest0_131
+      - _CH_@M4nifest0_132
+      - _CH_@M4nifest0_133
+      - _DE_@M4nifest0_134
+      - _DE_@M4nifest0_135
+      - _DE_@M4nifest0_136
+      - _DE_@M4nifest0_137
+      - _CH_@M4nifest0_138
+      - _CH_@M4nifest0_139
+      - _CH_@M4nifest0_140
+      - _CH_@M4nifest0_141
+      - _CH_@M4nifest0_142
+      - _CH_@M4nifest0_143
+      - _CH_@M4nifest0_144
+      - _CH_@M4nifest0_145
+      - _CH_@M4nifest0_146
+      - _CH_@M4nifest0_147
+      - _CH_@M4nifest0_148
+      - _CH_@M4nifest0_149
+      - _CH_@M4nifest0_150
+      - _CH_@M4nifest0_151
+      - _CH_@M4nifest0_152
+      - _CH_@M4nifest0_153
+      - _CH_@M4nifest0_154
+      - _CH_@M4nifest0_155
+      - _CH_@M4nifest0_156
+      - _CH_@M4nifest0_157
+      - _CH_@M4nifest0_158
+      - _CH_@M4nifest0_159
+      - _CH_@M4nifest0_160
+      - _CH_@M4nifest0_161
+      - _CH_@M4nifest0_162
+      - _CH_@M4nifest0_163
+      - _CH_@M4nifest0_164
+      - _CH_@M4nifest0_165
+      - _CH_@M4nifest0_166
+      - _CH_@M4nifest0_167
+      - _CH_@M4nifest0_168
+      - _CH_@M4nifest0_169
+      - _CH_@M4nifest0_170
+      - _CH_@M4nifest0_171
+      - _CH_@M4nifest0_172
+      - _CH_@M4nifest0_173
+      - _CH_@M4nifest0_174
+      - _CH_@M4nifest0_175
+      - _CH_@M4nifest0_176
+      - _CH_@M4nifest0_177
+      - _CH_@M4nifest0_178
+      - _CH_@M4nifest0_179
+      - _DE_@M4nifest0_180
+      - _DE_@M4nifest0_181
+      - _DE_@M4nifest0_182
+      - _DE_@M4nifest0_183
+      - _DE_@M4nifest0_184
+      - _DE_@M4nifest0_185
+      - _DE_@M4nifest0_186
+      - _DE_@M4nifest0_187
+      - _DE_@M4nifest0_188
+      - _DE_@M4nifest0_189
+      - _DE_@M4nifest0_190
+      - _DE_@M4nifest0_191
+      - _DE_@M4nifest0_192
+      - _DE_@M4nifest0_193
+      - _DE_@M4nifest0_194
+      - _DE_@M4nifest0_195
+      - _DE_@M4nifest0_196
+      - _DE_@M4nifest0_197
+      - _DE_@M4nifest0_198
+      - _DE_@M4nifest0_199
+      - _DE_@M4nifest0_200
+      - _DE_@M4nifest0_201
+      - _DE_@M4nifest0_202
+      - _DE_@M4nifest0_203
+      - _DE_@M4nifest0_204
+      - _DE_@M4nifest0_205
+      - _DE_@M4nifest0_206
+      - _DE_@M4nifest0_207
+      - _DE_@M4nifest0_208
+      - _DE_@M4nifest0_209
+      - _DE_@M4nifest0_210
+      - _DE_@M4nifest0_211
+      - _DE_@M4nifest0_212
+      - _DE_@M4nifest0_213
+      - _DE_@M4nifest0_214
+      - _DE_@M4nifest0_215
+      - _DE_@M4nifest0_216
+      - _DE_@M4nifest0_217
+      - _DE_@M4nifest0_218
+      - _DE_@M4nifest0_219
+      - _DE_@M4nifest0_220
+      - _DE_@M4nifest0_221
+      - _DE_@M4nifest0_222
+      - _DE_@M4nifest0_223
+      - _DE_@M4nifest0_224
+      - _DE_@M4nifest0_225
+      - _DE_@M4nifest0_226
+      - _RU_@M4nifest0_227
+      - _RU_@M4nifest0_228
+      - _RU_@M4nifest0_229
+      - _RU_@M4nifest0_230
+      - _RU_@M4nifest0_231
+      - _RU_@M4nifest0_232
+      - _RU_@M4nifest0_233
+      - _RU_@M4nifest0_234
+      - _NL_@M4nifest0_235
+      - _NL_@M4nifest0_236
+      - _NL_@M4nifest0_237
+      - _NL_@M4nifest0_238
+      - _NL_@M4nifest0_239
+      - _NL_@M4nifest0_240
+      - _NL_@M4nifest0_241
+      - _NL_@M4nifest0_242
+      - _NL_@M4nifest0_243
+      - _NL_@M4nifest0_244
+      - _NL_@M4nifest0_245
+      - _NL_@M4nifest0_246
+      - _NL_@M4nifest0_247
+      - _NL_@M4nifest0_248
+      - _NL_@M4nifest0_249
+      - _NL_@M4nifest0_250
+      - _NL_@M4nifest0_251
+      - _NL_@M4nifest0_252
+      - _NL_@M4nifest0_253
+      - _NL_@M4nifest0_254
+      - _NL_@M4nifest0_255
+      - _NL_@M4nifest0_256
+      - _NL_@M4nifest0_257
+      - _NL_@M4nifest0_258
+      - _NL_@M4nifest0_259
+      - _NL_@M4nifest0_260
+      - _NL_@M4nifest0_261
+      - _NL_@M4nifest0_262
+      - _NL_@M4nifest0_263
+      - _NL_@M4nifest0_264
+      - _NL_@M4nifest0_265
+      - _NL_@M4nifest0_266
+      - _NL_@M4nifest0_267
+      - _NL_@M4nifest0_268
+      - _NL_@M4nifest0_269
+      - _NL_@M4nifest0_270
+      - _NL_@M4nifest0_271
+      - _NL_@M4nifest0_272
+      - _NL_@M4nifest0_273
+      - _NL_@M4nifest0_274
+      - _NL_@M4nifest0_275
+      - _NL_@M4nifest0_276
+      - _NL_@M4nifest0_277
+      - _NL_@M4nifest0_278
+      - _NL_@M4nifest0_279
+      - _NL_@M4nifest0_280
+      - _NL_@M4nifest0_281
+      - _NL_@M4nifest0_282
+      - _NL_@M4nifest0_283
+      - _NL_@M4nifest0_284
+      - _NL_@M4nifest0_285
+      - _NL_@M4nifest0_286
+      - _NL_@M4nifest0_287
+      - _NL_@M4nifest0_288
+      - _CH_@M4nifest0_289
+      - _CH_@M4nifest0_290
+      - _CH_@M4nifest0_291
+      - _CH_@M4nifest0_292
+      - _CH_@M4nifest0_293
+      - _CH_@M4nifest0_294
+      - _CH_@M4nifest0_295
+      - _CH_@M4nifest0_296
+      - _CH_@M4nifest0_297
+      - _CH_@M4nifest0_298
+      - _CH_@M4nifest0_299
+      - _CH_@M4nifest0_300
+      - _CH_@M4nifest0_301
+      - _CH_@M4nifest0_302
+      - _CH_@M4nifest0_303
+      - _CH_@M4nifest0_304
+      - _CH_@M4nifest0_305
+      - _CH_@M4nifest0_306
+      - _CH_@M4nifest0_307
+      - _CH_@M4nifest0_308
+      - _CH_@M4nifest0_309
+      - _CH_@M4nifest0_310
+      - _CH_@M4nifest0_311
+      - _CH_@M4nifest0_312
+      - _CH_@M4nifest0_313
+      - _CH_@M4nifest0_314
+      - _CH_@M4nifest0_315
+      - _CH_@M4nifest0_316
+      - _CH_@M4nifest0_317
+      - _CH_@M4nifest0_318
+      - _CH_@M4nifest0_319
+      - _CH_@M4nifest0_320
+      - _CH_@M4nifest0_321
+      - _CH_@M4nifest0_322
+      - _CH_@M4nifest0_323
+      - _CH_@M4nifest0_324
+      - _CH_@M4nifest0_325
+      - _CH_@M4nifest0_326
+      - _CH_@M4nifest0_327
+      - _CH_@M4nifest0_328
+      - _CH_@M4nifest0_329
+      - _CH_@M4nifest0_330
+      - _CH_@M4nifest0_331
+      - _CH_@M4nifest0_332
+      - _CH_@M4nifest0_333
+      - _DE_@M4nifest0_334
+      - _DE_@M4nifest0_335
+      - _DE_@M4nifest0_336
+      - _CH_@M4nifest0_337
+      - _CH_@M4nifest0_338
+      - _CH_@M4nifest0_339
+      - _CH_@M4nifest0_340
+      - _CH_@M4nifest0_341
+      - _CH_@M4nifest0_342
+      - _CH_@M4nifest0_343
+      - _CH_@M4nifest0_344
+      - _CH_@M4nifest0_345
+      - _CH_@M4nifest0_346
+      - _CH_@M4nifest0_347
+      - _CH_@M4nifest0_348
+      - _CH_@M4nifest0_349
+      - _CH_@M4nifest0_350
+      - _CH_@M4nifest0_351
+      - _CH_@M4nifest0_352
+      - _CH_@M4nifest0_353
+      - _CH_@M4nifest0_354
+      - _CH_@M4nifest0_355
+      - _CH_@M4nifest0_356
+      - _CH_@M4nifest0_357
+      - _CH_@M4nifest0_358
+      - _CH_@M4nifest0_359
+      - _CH_@M4nifest0_360
+      - _CH_@M4nifest0_361
+      - _CH_@M4nifest0_362
+      - _CH_@M4nifest0_363
+      - _CH_@M4nifest0_364
+      - _CH_@M4nifest0_365
+      - _CH_@M4nifest0_366
+      - _CH_@M4nifest0_367
+      - _CH_@M4nifest0_368
+      - _CH_@M4nifest0_369
+      - _CH_@M4nifest0_370
+      - _CH_@M4nifest0_371
+      - _CH_@M4nifest0_372
+      - _CH_@M4nifest0_373
+      - _CH_@M4nifest0_374
+      - _CH_@M4nifest0_375
+      - _CH_@M4nifest0_376
+      - _CH_@M4nifest0_377
+      - _CH_@M4nifest0_378
+      - DIRECT
+rules:
+  - MATCH,FASTSSH-SSHKIT-HOWDY
