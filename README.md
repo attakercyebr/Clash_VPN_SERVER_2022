@@ -28,7 +28,7 @@
 
 ## # Main repository for downloading tools[Linux]
 
-- Assets. [Doc](https://github.com/Fndroid/clash_for_windows_pkg/releases)
+- Assets. [Doc](https://github.com/zzzgydi/clash-verge/releases/tag/v0.0.29)
 
 ## # See how it works
 
