@@ -1,0 +1,222 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+ipv6: false
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: true
+profile:
+  store-selected: true
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 127.0.0.1:7874
+  nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  fallback:
+    - 1.0.0.1
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+  default-nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+proxies:
+  - name: _RU_@M4nifest0_1
+    server: 213.183.53.196
+    port: 9001
+    type: ss
+    cipher: aes-256-cfb
+    password: UkXRsXvR6buDMG2Y
+    udp: true
+  - name: _RU_@M4nifest0_2
+    server: 213.183.53.196
+    port: 9006
+    type: ss
+    cipher: aes-256-cfb
+    password: FAdUvMJUq5vDgKEq
+    udp: true
+  - name: _RU_@M4nifest0_3
+    server: 213.183.53.196
+    port: 9018
+    type: ss
+    cipher: aes-256-cfb
+    password: fG2artUmHfNT2cX7
+    udp: true
+  - name: _RU_@M4nifest0_4
+    server: 213.183.53.196
+    port: 9026
+    type: ss
+    cipher: aes-256-cfb
+    password: QWDDvVE9npNurQfA
+    udp: true
+  - name: _RU_@M4nifest0_5
+    server: 213.183.53.196
+    port: 9033
+    type: ss
+    cipher: aes-256-cfb
+    password: UTJA57ypk2XKQpnm
+    udp: true
+  - name: _RU_@M4nifest0_6
+    server: 213.183.53.196
+    port: 9038
+    type: ss
+    cipher: aes-256-cfb
+    password: gYCYXfkUQEs2TaJQ
+    udp: true
+  - name: _RU_@M4nifest0_7
+    server: 213.183.53.196
+    port: 9045
+    type: ss
+    cipher: aes-256-cfb
+    password: Lp27rqyJq72bZsqX
+    udp: true
+  - name: _RU_@M4nifest0_8
+    server: 213.183.53.196
+    port: 9050
+    type: ss
+    cipher: aes-256-cfb
+    password: FG5ddLsMPbV5CutE
+    udp: true
+  - name: _RU_@M4nifest0_9
+    server: 213.183.53.196
+    port: 9088
+    type: ss
+    cipher: aes-256-cfb
+    password: f8npKgNzdkss2ytn
+    udp: true
+  - name: _RU_@M4nifest0_10
+    server: 213.183.53.200
+    port: 9018
+    type: ss
+    cipher: aes-256-cfb
+    password: fG2artUmHfNT2cX7
+    udp: true
+  - name: _RU_@M4nifest0_11
+    server: 213.183.53.202
+    port: 9024
+    type: ss
+    cipher: aes-256-cfb
+    password: BejrQvtu9sqUeNuZ
+    udp: true
+  - name: _RU_@M4nifest0_12
+    server: 213.183.53.202
+    port: 9037
+    type: ss
+    cipher: aes-256-cfb
+    password: TN2YqghxeFDKZfLU
+    udp: true
+  - name: _RU_@M4nifest0_13
+    server: 213.183.53.202
+    port: 9094
+    type: ss
+    cipher: aes-256-cfb
+    password: rpgbNnU9rDDU4aWZ
+    udp: true
+  - name: _RU_@M4nifest0_14
+    server: 213.183.53.202
+    port: 9008
+    type: ss
+    cipher: aes-256-cfb
+    password: y9VURyNzJWNRYEGQ
+    udp: true
+  - name: _RU_@M4nifest0_15
+    server: 213.183.53.202
+    port: 9038
+    type: ss
+    cipher: aes-256-cfb
+    password: gYCYXfkUQEs2TaJQ
+    udp: true
+  - name: _RU_@M4nifest0_16
+    server: 213.183.53.202
+    port: 9045
+    type: ss
+    cipher: aes-256-cfb
+    password: Lp27rqyJq72bZsqX
+    udp: true
+  - name: _RU_@M4nifest0_17
+    server: 213.183.53.202
+    port: 9057
+    type: ss
+    cipher: aes-256-cfb
+    password: wjTugX3ZtHMB9c3Z
+    udp: true
+  - name: _RU_@M4nifest0_18
+    server: 213.183.53.202
+    port: 9094
+    type: ss
+    cipher: aes-256-cfb
+    password: rpgbNnU9rDDU4aWZ
+    udp: true
+  - name: _RU_@M4nifest0_19
+    server: 213.183.53.202
+    port: 9097
+    type: ss
+    cipher: aes-256-cfb
+    password: Sn5B7jTqr76aCJT8
+    udp: true
+  - name: _RU_@M4nifest0_20
+    server: 213.183.53.196
+    port: 9008
+    type: ss
+    cipher: aes-256-cfb
+    password: y9VURyNzJWNRYEGQ
+    udp: true
+  - name: _RU_@M4nifest0_21
+    server: 213.183.53.196
+    port: 9050
+    type: ss
+    cipher: aes-256-cfb
+    password: FG5ddLsMPbV5CutE
+    udp: true
+  - name: _RU_@M4nifest0_22
+    server: 213.183.53.196
+    port: 9056
+    type: ss
+    cipher: aes-256-cfb
+    password: rNBfNuuANFCAk7KB
+    udp: true
+  - name: _RU_@M4nifest0_23
+    server: 213.183.53.177
+    port: 9006
+    type: ss
+    cipher: aes-256-cfb
+    password: FAdUvMJUq5vDgKEq
+    udp: true
+proxy-groups:
+  - name: FASTSSH-SSHKIT-HOWDY
+    type: select
+    proxies:
+      - _RU_@M4nifest0_1
+      - _RU_@M4nifest0_2
+      - _RU_@M4nifest0_3
+      - _RU_@M4nifest0_4
+      - _RU_@M4nifest0_5
+      - _RU_@M4nifest0_6
+      - _RU_@M4nifest0_7
+      - _RU_@M4nifest0_8
+      - _RU_@M4nifest0_9
+      - _RU_@M4nifest0_10
+      - _RU_@M4nifest0_11
+      - _RU_@M4nifest0_12
+      - _RU_@M4nifest0_13
+      - _RU_@M4nifest0_14
+      - _RU_@M4nifest0_15
+      - _RU_@M4nifest0_16
+      - _RU_@M4nifest0_17
+      - _RU_@M4nifest0_18
+      - _RU_@M4nifest0_19
+      - _RU_@M4nifest0_20
+      - _RU_@M4nifest0_21
+      - _RU_@M4nifest0_22
+      - _RU_@M4nifest0_23
+      - DIRECT
+rules:
+  - MATCH,FASTSSH-SSHKIT-HOWDY
